@@ -1,0 +1,107 @@
+version: '3'
+
+services:
+ #https://github.com/docker-library/repo-info/blob/master/repos/mongo/remote/3-stretch.md
+  mongodb:
+    image: mongo:3
+    ports:
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+#VOLUME [/data/db /data/configdb]
+
+#https://hub.docker.com/r/webcenter/activemq/
+ #https://hub.docker.com/r/rmohr/activemq/
+# https://dzone.com/articles/building-active-mq-docker-image-on-k8s
+  servicebus:
+    image:  webcenter/activemq
+
+
+  dispatcher:
+    build: foundry
+    image: dispatcher
+    ports: 
+# keep it off 8080 on local dev
+      - "8080:8082"
+    hostname: ec-dispatcher
+    environment:
+      - es_cluster=es-geoportal
+      - es_node=elasticsearch
+    volumes:
+      - "./local/harvester:/root"
+      - gptmetadata:/opt/tomcat/webapps/metadata
+    links: 
+      - elasticsearch:elasticsearch
+    networks:
+      - default
+
+
+  consumer:
+    image: consumer
+    container_name: ec-consumer
+    hostname: elasticsearch
+    ports:
+      - "9000:9000"
+      - "9000:9000"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - bootstrap.memory_lock=true
+#      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+      - discovery.type=single-node
+      - cluster.name=es-geoportal
+      - xpack.security.enabled=false
+    networks:
+      - default
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 512M
+
+  manager:
+    image: manager
+    container_name: manager
+    environment:
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "discovery.zen.ping.unicast.hosts=elasticsearch"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata2:/usr/share/elasticsearch/data
+    networks:
+      - default
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
+networks:
+  default:
+    external:
+      name: geoportal
+
+volumes:
+  esdata1:
+    driver: local
+  esdata2:
+    driver: local
+  gptmetadata:
+    driver: local
