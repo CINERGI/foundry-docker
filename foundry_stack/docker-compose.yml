@@ -4,52 +4,67 @@ services:
  #https://github.com/docker-library/repo-info/blob/master/repos/mongo/remote/3-stretch.md
   mongodb:
     image: mongo:3
+    hostname: mongodb
     ports:
+      - 27017:27017
+      - 27018:27018
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
-#VOLUME [/data/db /data/configdb]
-
+      MONGO_INITDB_DATABASE: cinergi
+    volumes:
+      - mongodb1:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 #https://hub.docker.com/r/webcenter/activemq/
- #https://hub.docker.com/r/rmohr/activemq/
+ # https://hub.docker.com/r/woahbase/alpine-activemq/
 # https://dzone.com/articles/building-active-mq-docker-image-on-k8s
   servicebus:
     image:  webcenter/activemq
-
+    hostname: servicebus
+    ports:
+      - 61614:61614
+      - 61613:61613
+      - 61616:61616
 
   dispatcher:
     build: foundry
     image: dispatcher
-    ports: 
-# keep it off 8080 on local dev
-      - "8080:8082"
     hostname: ec-dispatcher
+#    entrypoint: ./docker_dispatcher.sh
+    depends_on:
+      - mongodb
+      - servicebus
+    ports:
+# keep it off 8080 on local dev
+      - "8083:8080"
+      - "9000:9000"
     environment:
       - es_cluster=es-geoportal
       - es_node=elasticsearch
     volumes:
-      - "./local/harvester:/root"
+      - foundryData:/data
       - gptmetadata:/opt/tomcat/webapps/metadata
-    links: 
-      - elasticsearch:elasticsearch
+#    links:
+#      - consumer:consumer
     networks:
       - default
 
 
   consumer:
+    build: foundry
     image: consumer
     container_name: ec-consumer
-    hostname: elasticsearch
-    ports:
-      - "9000:9000"
-      - "9000:9000"
+    hostname: consumer
+#    entrypoint: ./docker_consumer_head.sh
+    depends_on:
+      - dispatcher
     ulimits:
       memlock:
-        soft: -1
-        hard: -1
+          soft: -1
+          hard: -1
     volumes:
-      - esdata1:/usr/share/elasticsearch/data
+      - foundryData:/data
     environment:
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
       - bootstrap.memory_lock=true
@@ -59,18 +74,24 @@ services:
       - xpack.security.enabled=false
     networks:
       - default
-    deploy:
-      resources:
-        limits:
-          cpus: '0.50'
-          memory: 512M
-        reservations:
-          cpus: '0.25'
-          memory: 512M
+#    deploy:
+#      resources:
+#        limits:
+#          cpus: '0.50'
+#          memory: 512M
+#        reservations:
+#          cpus: '0.25'
+#          memory: 512M
 
   manager:
+    build: foundry
     image: manager
     container_name: manager
+    hostname: consumer
+#    entrypoint: ./docker_manager.sh
+    depends_on:
+      - mongodb
+      - servicebus
     environment:
       - cluster.name=docker-cluster
       - bootstrap.memory_lock=true
@@ -81,27 +102,31 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - esdata2:/usr/share/elasticsearch/data
+      - foundryData:/data
     networks:
       - default
-    deploy:
-      resources:
-        limits:
-          cpus: '0.50'
-          memory: 512M
-        reservations:
-          cpus: '0.25'
-          memory: 256M
+#    deploy:
+#      resources:
+#        limits:
+#          cpus: '0.50'
+#          memory: 512M
+#        reservations:
+#          cpus: '0.25'
+#          memory: 256M
 
-networks:
-  default:
-    external:
-      name: geoportal
+# ########pain point removed
+# requires creation of an  geoportal network.
+# docker network geoportal create
+###########
+#networks:
+#  default:
+#    external:
+#      name: geoportal
 
 volumes:
-  esdata1:
+  foundryData:
     driver: local
-  esdata2:
+  mongodb1:
     driver: local
   gptmetadata:
     driver: local

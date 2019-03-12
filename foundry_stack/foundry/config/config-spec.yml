@@ -1,0 +1,57 @@
+pluginDir: "/var/data/foundry/foundry_plugins/plugins"
+database:
+  host: mongodb
+  port: 27017
+  user: root
+  pwd: "example"
+  db: discotest
+  collection: records
+mq:
+  brokerURL: "tcp://servicebus:61616?wireFormat.maxInactivityDuration=0"
+
+workflow:
+  "Cinergi Workflow":
+  - uuidGen
+  - spatial
+  - keyword
+  - org
+  - export
+  - geoportal
+  "Edited Workflow":
+  - edited
+  - geoportal
+
+consumers:
+- uuidGen:
+    class: org.neuinfo.foundry.consumers.jms.consumers.plugins.DocIDAssigner
+    status: id_assigned
+- spatial:
+    class: org.neuinfo.foundry.consumers.jms.consumers.plugins.SpatialEnhancer2
+    status: spatially_enhanced
+- keyword:
+    class: org.neuinfo.foundry.consumers.jms.consumers.plugins.KeywordEnhancer2
+    status: keyword_enhanced
+    serviceURL: "http://ec-scigraph.sdsc.edu:9000"
+    stopwordsUrl: "file:///var/data/cinergi/stopwords.txt"
+    useNER: false
+- org:
+    class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.OrganizationEnhancer2"
+    status: org_enhanced
+- export:
+    class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.WAFExporter"
+    status: exported_waf
+    outDirectory: "/data/waf"
+- geoportal:
+    class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.Geoportal2Exporter"
+    status: finished
+    gptURI: "http://132.249.238.169:8080/geoportal/"
+    elasticsearchIndex: metadata
+    user: "admin"
+    password: "pass"
+- edited:
+    class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.EditedRecordProcessor"
+    status: metatdata_edited
+
+
+
+
