@@ -11,11 +11,18 @@ RUN apt-get update \
     git \
     maven \
  && apt-get clean \
- && rm -r /var/lib/apt/lists/*
-
+ && rm -r /var/lib/apt/lists/* \
+ && mkdir /data/
+# && mkdir /data/logs \
+# && mkdir /data/waf \
+# && mkdir /data/share \
 # The WORKDIR instruction can resolve environment variables previously set using ENV.
 # You can only use environment variables explicitly set in the Dockerfile.
 ENV HOME /home/foundry
+# toggle on/off if BUILD changed. Spares a --no-cache
+#RUN echo $HOME
+ENV PROFILE dev
+
 
 RUN useradd  -m   foundry
 USER foundry
@@ -74,19 +81,30 @@ RUN mvn install:install-file -Dfile=$HOME/Foundry/dependencies/lib/prov-xml-0.5.
 #########################################
 ENV FOUNDRY_HOME $HOME/Foundry/
 WORKDIR $HOME/Foundry/
-RUN mvn -Pdev clean install -DskipTests
+RUN echo $PROFILE
+RUN mvn -P${PROFILE} clean install -DskipTests
+RUN echo ${PROFILE}
 
 WORKDIR $HOME/Foundry/bin/
 RUN chmod a+x config_gen.sh consumer_head.sh dispatcher.sh manager.sh config_gen.sh docker_consumer_head.sh docker_dispatcher.sh docker_manager.sh
 COPY config/config-spec.yml .
 
-RUN  [ "./config_gen.sh", "-c config-spec.yml", "-p dev"]
+RUN  [ "./config_gen.sh", "-c config-spec.yml", "-p ${PROFILE}" ]
 #RUN mvn -X -q -f ../common/pom.xml exec:java -Dexec.mainClass="org.neuinfo.foundry.common.config.ConfigGenerator" -Dexec.args="$*"
 # RUN mvn -X -q -f ../common/pom.xml exec:java -Dexec.mainClass="org.neuinfo.foundry.common.config.ConfigGenerator" -Dexec.args="-c config-spec.yml -f $HOME/Foundry -p dev"
 
 WORKDIR $HOME/Foundry/
 # RUN mvn -Pdev clean install -DskipTests
-RUN mvn -Pdev  install -DskipTests
+# src/main/assembly/src.xml descriptors have hard coded id of prod
+ENV singleAssemblyId prod
+RUN mvn -P${PROFILE}   compile assembly:single -DskipTests \
+  && mvn -P ${PROFILE}   package -f ingestor-web/pom.xml -DskipTests \
+  && cp dispatcher/target/foundry-dispatcher-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
+  && cp consumers/target/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
+  && cp ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
+  && cp common/target/foundry-common-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/
+
+
 
 #######
 # one base
@@ -96,7 +114,7 @@ FROM foundry AS foundrybase
 
 WORKDIR $HOME/Foundry/bin/
 EXPOSE 9000
-ENTRYPOINT   ["./docker_manager.sh"]
+ENTRYPOINT   ["bin/bash"]
 
 ###################
 #try three machines
@@ -120,3 +138,25 @@ ENTRYPOINT   ["./docker_manager.sh"]
 #WORKDIR $HOME/Foundry/bin/
 #EXPOSE 22
 #ENTRYPOINT   ["./docker_manager.sh"]
+
+#######################
+# tomcat for the UL
+#######################
+FROM tomcat:9-jre8 AS foundry-web
+
+RUN apt-get update \
+ && apt-get install -y -q --no-install-recommends \
+    ca-certificates \
+#   git \
+#   maven \
+#    ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
+ && apt-get clean \
+ && rm -r /var/lib/apt/lists/*
+
+#COPY tomcat-users.xml $CATALINA_HOME/conf
+
+WORKDIR $CATALINA_HOME/webapps/
+
+COPY --from=foundry /home/foundry/Foundry/ingestor-web/target/foundry.war $CATALINA_HOME/webapps/foundry.war
+
+WORKDIR $CATALINA_HOME/webapps/

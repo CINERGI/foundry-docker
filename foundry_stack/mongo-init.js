@@ -3,19 +3,20 @@ let error = false
 let res = [
     db.cinergi,
     db = db.getSiblingDB('cinergi'),
-
+    db.test.insertOne({test:'test'}),
     db.createUser({
-        user: 'test-user',
+        user: 'pipeline',
         pwd: 'example',
         roles: [
+
             {
-                role: 'root',
-                db: 'admin',
+                role: 'dbAdmin',
+                db: 'cinergi',
             },
         ],
     }),
     db.getCollectionNames(),
-    db.cinergi.insertOne({test:'test'}),
+
 
 ]
 

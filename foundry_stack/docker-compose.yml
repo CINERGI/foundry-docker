@@ -4,6 +4,7 @@ services:
  #https://github.com/docker-library/repo-info/blob/master/repos/mongo/remote/3-stretch.md
   mongodb:
     image: mongo:3
+    container_name: foundry-mongo
     hostname: mongodb
     ports:
       - 27017:27017
@@ -21,23 +22,23 @@ services:
 # https://dzone.com/articles/building-active-mq-docker-image-on-k8s
   servicebus:
     image:  webcenter/activemq
+    container_name: foundry-servicebus
     hostname: servicebus
     ports:
-      - 61614:61614
+      - 8161:8161
       - 61613:61613
       - 61616:61616
 
   dispatcher:
     build: foundry
-    image: dispatcher
+    image: foundrybase
+    container_name: foundry-dispatcher
     hostname: ec-dispatcher
-#    entrypoint: ./docker_dispatcher.sh
+    entrypoint: ./docker_dispatcher.sh
     depends_on:
       - mongodb
       - servicebus
     ports:
-# keep it off 8080 on local dev
-      - "8083:8080"
       - "9000:9000"
     environment:
       - es_cluster=es-geoportal
@@ -52,11 +53,10 @@ services:
 
 
   consumer:
-    build: foundry
-    image: consumer
-    container_name: ec-consumer
+    image: foundrybase
+    container_name: foundry-consumer
     hostname: consumer
-#    entrypoint: ./docker_consumer_head.sh
+    entrypoint: ./docker_consumer_head.sh
     depends_on:
       - dispatcher
     ulimits:
@@ -66,12 +66,7 @@ services:
     volumes:
       - foundryData:/data
     environment:
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - bootstrap.memory_lock=true
-#      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
-      - discovery.type=single-node
-      - cluster.name=es-geoportal
-      - xpack.security.enabled=false
+      - es_node=elasticsearch
     networks:
       - default
 #    deploy:
@@ -84,19 +79,15 @@ services:
 #          memory: 512M
 
   manager:
-    build: foundry
-    image: manager
-    container_name: manager
-    hostname: consumer
-#    entrypoint: ./docker_manager.sh
+    image: foundrybase
+    container_name: foundry-manager
+    hostname: manager
+    entrypoint: ./docker_manager.sh
     depends_on:
       - mongodb
       - servicebus
     environment:
-      - cluster.name=docker-cluster
-      - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - "discovery.zen.ping.unicast.hosts=elasticsearch"
+      - es_node=elasticsearch
     ulimits:
       memlock:
         soft: -1
@@ -105,6 +96,25 @@ services:
       - foundryData:/data
     networks:
       - default
+  foundryweb:
+    image: foundry-web
+    container_name: foundry-web
+    hostname: foundry
+    depends_on:
+      - mongodb
+      - servicebus
+    environment:
+      - es_node=elasticsearch
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - foundryData:/data
+      - gptmetadata:/opt/tomcat/webapps/metadata
+    networks:
+      - default
+
 #    deploy:
 #      resources:
 #        limits:
