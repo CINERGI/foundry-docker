@@ -1,4 +1,4 @@
-version: '3'
+version: '3.4'
 
 services:
  #https://github.com/docker-library/repo-info/blob/master/repos/mongo/remote/3-stretch.md
@@ -17,21 +17,26 @@ services:
     volumes:
       - mongodb1:/data/db
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - default
 #https://hub.docker.com/r/webcenter/activemq/
  # https://hub.docker.com/r/woahbase/alpine-activemq/
 # https://dzone.com/articles/building-active-mq-docker-image-on-k8s
   servicebus:
-    image:  webcenter/activemq
+    image:  woahbase/alpine-activemq
     container_name: foundry-servicebus
     hostname: servicebus
+    networks:
+      - default
     ports:
       - 8161:8161
-      - 61613:61613
+#      - 61613:61613
       - 61616:61616
 
   dispatcher:
-    build: foundry
-    image: foundrybase
+    build:
+      context: foundry
+      target: foundrybase
     container_name: foundry-dispatcher
     hostname: ec-dispatcher
     entrypoint: ./docker_dispatcher.sh
@@ -53,7 +58,9 @@ services:
 
 
   consumer:
-    image: foundrybase
+    build:
+      context: foundry
+      target: foundrybase
     container_name: foundry-consumer
     hostname: consumer
     entrypoint: ./docker_consumer_head.sh
@@ -79,7 +86,9 @@ services:
 #          memory: 512M
 
   manager:
-    image: foundrybase
+    build:
+      context: foundry
+      target: foundrybase
     container_name: foundry-manager
     hostname: manager
     entrypoint: ./docker_manager.sh
@@ -96,8 +105,11 @@ services:
       - foundryData:/data
     networks:
       - default
+
   foundryweb:
-    image: foundry-web
+    build:
+      context: foundry
+      target: foundryweb
     container_name: foundry-web
     hostname: foundry
     depends_on:

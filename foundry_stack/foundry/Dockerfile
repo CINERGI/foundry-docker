@@ -4,6 +4,8 @@ FROM openjdk:8-jdk as foundry
 LABEL description="CINERGI ISO19115 Metadata enhancement pipeline"
 LABEL maintainer="David Valentine dwvalentine@usdc.edu"
 
+VOLUME ["/data"]
+
 # Install wget and install/updates certificates
 RUN apt-get update \
  && apt-get install -y -q --no-install-recommends \
@@ -11,11 +13,8 @@ RUN apt-get update \
     git \
     maven \
  && apt-get clean \
- && rm -r /var/lib/apt/lists/* \
- && mkdir /data/
-# && mkdir /data/logs \
-# && mkdir /data/waf \
-# && mkdir /data/share \
+ && rm -r /var/lib/apt/lists/*
+
 # The WORKDIR instruction can resolve environment variables previously set using ENV.
 # You can only use environment variables explicitly set in the Dockerfile.
 ENV HOME /home/foundry
@@ -142,7 +141,7 @@ ENTRYPOINT   ["bin/bash"]
 #######################
 # tomcat for the UL
 #######################
-FROM tomcat:9-jre8 AS foundry-web
+FROM tomcat:9-jre8 AS foundryweb
 
 RUN apt-get update \
  && apt-get install -y -q --no-install-recommends \
@@ -157,6 +156,9 @@ RUN apt-get update \
 
 WORKDIR $CATALINA_HOME/webapps/
 
-COPY --from=foundry /home/foundry/Foundry/ingestor-web/target/foundry.war $CATALINA_HOME/webapps/foundry.war
+COPY --from=foundrybase /home/foundry/Foundry/ingestor-web/target/foundry.war $CATALINA_HOME/webapps/foundry.war
+# something to cause an image
+VOLUME ["/data", "/opt/tomcat/webapps/metadata"]
+COPY tomcat-users.xml $CATALINA_HOME/conf
 
-WORKDIR $CATALINA_HOME/webapps/
+EXPOSE 8080
