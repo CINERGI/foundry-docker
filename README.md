@@ -18,13 +18,13 @@ geoportal server and a harvester are captured
  
 Clone the repository to your local drive. In order to build the containers and run them, use the following commands:
 ```bash
-$ git clone https://github.com/cinergi/geoportal-server-catalog-docker.git
-$ cd geoportal-server-catalog-docker/src
-$ docker network create geoportal
+$ git clone https://github.com/cinergi/foundry-docker.git
+$ cd foundry-docker/foundry_stack
 $ docker-compose build
 $ docker-compose up
 ```
 
+S
 ## Run the applications
 
 * Connect to http://localhost:8080/geoportal to see the geoportal in action. 
@@ -39,3 +39,11 @@ for production:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
 $ grep vm.max_map_count /etc/sysctl.conf
 vm.max_map_count=262144
+
+## NOTES
+startup shell scripts are copied in. If we use the ones in foundry, then
+we end up having to rebuild when we want to modify them
+
+Ingest:
+Present, we will copy ingest configes into a container, the 
+exec and ingest command.

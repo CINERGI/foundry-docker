@@ -1,30 +1,32 @@
 
-FROM openjdk:8-jdk as foundry
+FROM maven:3-jdk-8 as foundrybuild
 
 LABEL description="CINERGI ISO19115 Metadata enhancement pipeline"
 LABEL maintainer="David Valentine dwvalentine@usdc.edu"
 
-VOLUME ["/data"]
-
-# Install wget and install/updates certificates
-RUN apt-get update \
- && apt-get install -y -q --no-install-recommends \
-    ca-certificates \
-    git \
-    maven \
- && apt-get clean \
- && rm -r /var/lib/apt/lists/*
+#VOLUME ["/data"]
+#
+## Install wget and install/updates certificates
+#RUN apt-get update \
+# && apt-get install -y -q --no-install-recommends \
+#    ca-certificates \
+#    git \
+#    maven \
+# && apt-get clean \
+# && rm -r /var/lib/apt/lists/*
 
 # The WORKDIR instruction can resolve environment variables previously set using ENV.
 # You can only use environment variables explicitly set in the Dockerfile.
+# in the interest of time, we mirror that code ran from /home/foundry
 ENV HOME /home/foundry
+RUN mkdir -p /home/foundry
 # toggle on/off if BUILD changed. Spares a --no-cache
 #RUN echo $HOME
 ENV PROFILE dev
 
 
-RUN useradd  -m   foundry
-USER foundry
+#RUN useradd  -m   foundry
+#USER foundry
 RUN echo $PWD
 
 ##########
@@ -99,7 +101,7 @@ ENV singleAssemblyId prod
 RUN mvn -P${PROFILE}   compile assembly:single -DskipTests \
   && mvn -P ${PROFILE}   package -f ingestor-web/pom.xml -DskipTests \
   && cp dispatcher/target/foundry-dispatcher-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
-  && cp consumers/target/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
+  && cp consumers/tdocparget/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
   && cp ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
   && cp common/target/foundry-common-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/
 
@@ -109,11 +111,38 @@ RUN mvn -P${PROFILE}   compile assembly:single -DskipTests \
 # one base
 # set correct entrypoints in the docker compose
 ##############
-FROM foundry AS foundrybase
+FROM openjdk:8-jdk AS foundrybase
+LABEL description="CINERGI ISO19115 Metadata enhancement pipeline"
+LABEL maintainer="David Valentine dwvalentine@usdc.edu"
 
-WORKDIR $HOME/Foundry/bin/
+VOLUME ["/data"]
+
+# Install wget and install/updates certificates
+RUN apt-get update \
+ && apt-get install -y -q --no-install-recommends \
+    ca-certificates \
+    git \
+    maven \
+ && apt-get clean \
+ && rm -r /var/lib/apt/lists/*
+
+# The WORKDIR instruction can resolve environment variables previously set using ENV.
+# You can only use environment variables explicitly set in the Dockerfile.
+# in the interest of time, we mirror that code ran from /home/foundry
+ENV HOME /foundry
+RUN mkdir -p /foundry
+COPY --from=foundrybuild /home/foundry/Foundry/bin/ bin/
+
+RUN  chmod 777 /data
+RUN mkdir -p /data/logs
+RUN mkdir -p /data/foundry
+COPY config/ /data/config/
+WORKDIR $HOME/bin/
+#COPY bin/docker_consumer_head.sh .
+COPY bin/docker_dispatcher.sh .
+#COPY bin/docker_manager.sh .
 EXPOSE 9000
-ENTRYPOINT   ["bin/bash"]
+ENTRYPOINT   ["/bin/bash"]
 
 ###################
 #try three machines

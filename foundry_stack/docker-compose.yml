@@ -39,7 +39,9 @@ services:
       target: foundrybase
     container_name: foundry-dispatcher
     hostname: ec-dispatcher
-    entrypoint: ./docker_dispatcher.sh
+    entrypoint: /bin/bash docker_dispatcher.sh
+    stdin_open: true
+    tty: true
     depends_on:
       - mongodb
       - servicebus
@@ -92,6 +94,9 @@ services:
     container_name: foundry-manager
     hostname: manager
     entrypoint: ./docker_manager.sh
+#    entrypoint: /bin/bash
+    stdin_open: true
+    tty: true
     depends_on:
       - mongodb
       - servicebus
