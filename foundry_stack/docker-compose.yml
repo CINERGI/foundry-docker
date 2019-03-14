@@ -39,7 +39,7 @@ services:
       target: foundrybase
     container_name: foundry-dispatcher
     hostname: ec-dispatcher
-    entrypoint: /bin/bash docker_dispatcher.sh
+    entrypoint: ./docker_dispatcher.sh
     stdin_open: true
     tty: true
     depends_on:

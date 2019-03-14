@@ -131,16 +131,20 @@ ENV HOME /foundry
 RUN mkdir -p /foundry
 WORKDIR $HOME/
 COPY --from=foundrybuild /home/foundry/Foundry/bin/ bin/
-RUN ls -al;ls -al bin
+RUN pwd;ls -al;ls -al bin
 
 RUN  chmod 777 /data
 RUN mkdir -p /data/logs
 RUN mkdir -p /data/foundry
 COPY config/ /data/config/
 WORKDIR $HOME/bin/
+
 COPY bin/docker_consumer_head.sh .
 COPY bin/docker_dispatcher.sh .
 COPY bin/docker_manager.sh .
+RUN chmod a+x config_gen.sh consumer_head.sh dispatcher.sh manager.sh config_gen.sh docker_consumer_head.sh docker_dispatcher.sh docker_manager.sh
+
+#RUN pwd;ls -al
 EXPOSE 9000
 ENTRYPOINT   ["/bin/bash"]
 
