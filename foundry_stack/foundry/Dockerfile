@@ -101,11 +101,9 @@ ENV singleAssemblyId prod
 RUN mvn -P${PROFILE}   compile assembly:single -DskipTests \
   && mvn -P ${PROFILE}   package -f ingestor-web/pom.xml -DskipTests \
   && cp dispatcher/target/foundry-dispatcher-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
-  && cp consumers/tdocparget/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
+  && cp consumers/target/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
   && cp ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
   && cp common/target/foundry-common-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/
-
-
 
 #######
 # one base
@@ -131,16 +129,18 @@ RUN apt-get update \
 # in the interest of time, we mirror that code ran from /home/foundry
 ENV HOME /foundry
 RUN mkdir -p /foundry
+WORKDIR $HOME/
 COPY --from=foundrybuild /home/foundry/Foundry/bin/ bin/
+RUN ls -al;ls -al bin
 
 RUN  chmod 777 /data
 RUN mkdir -p /data/logs
 RUN mkdir -p /data/foundry
 COPY config/ /data/config/
 WORKDIR $HOME/bin/
-#COPY bin/docker_consumer_head.sh .
+COPY bin/docker_consumer_head.sh .
 COPY bin/docker_dispatcher.sh .
-#COPY bin/docker_manager.sh .
+COPY bin/docker_manager.sh .
 EXPOSE 9000
 ENTRYPOINT   ["/bin/bash"]
 
@@ -185,7 +185,7 @@ RUN apt-get update \
 
 WORKDIR $CATALINA_HOME/webapps/
 
-COPY --from=foundrybase /home/foundry/Foundry/ingestor-web/target/foundry.war $CATALINA_HOME/webapps/foundry.war
+COPY --from=foundrybuild  /home/foundry/Foundry/ingestor-web/target/foundry.war $CATALINA_HOME/webapps/foundry.war
 # something to cause an image
 VOLUME ["/data", "/opt/tomcat/webapps/metadata"]
 COPY tomcat-users.xml $CATALINA_HOME/conf
