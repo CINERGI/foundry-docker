@@ -10,6 +10,13 @@ mq:
     brokerURL: "tcp://servicebus:61616?wireFormat.maxInactivityDuration=0"
 
 workflow:
+  "Form Workflow":
+    - uuidGen
+    - spatial
+    - keyword
+    - org
+    - export
+    - geoportal
   "Cinergi Workflow":
     - uuidGen
     - spatial

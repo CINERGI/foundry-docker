@@ -116,9 +116,9 @@ services:
       context: foundry
       target: ingestor
     container_name: foundry-ingestor
-    hostname: manager
-    entrypoint: /bin/bash docker_ingest_src_cli.sh
-    #    entrypoint: /bin/bash
+    hostname: ingestor
+    #entrypoint: /bin/bash docker_ingest_src_cli.sh
+    entrypoint: /bin/bash
     stdin_open: true
     tty: true
     depends_on:
