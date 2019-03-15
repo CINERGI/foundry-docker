@@ -39,7 +39,7 @@ services:
       target: foundrybase
     container_name: foundry-dispatcher
     hostname: ec-dispatcher
-    entrypoint: ./docker_dispatcher.sh
+    entrypoint: /bin/bash docker_dispatcher.sh
     stdin_open: true
     tty: true
     depends_on:
@@ -65,7 +65,7 @@ services:
       target: foundrybase
     container_name: foundry-consumer
     hostname: consumer
-    entrypoint: ./docker_consumer_head.sh
+    entrypoint: /bin/bash docker_consumer_head.sh
     depends_on:
       - dispatcher
     ulimits:
@@ -93,7 +93,7 @@ services:
       target: foundrybase
     container_name: foundry-manager
     hostname: manager
-    entrypoint: ./docker_manager.sh
+    entrypoint: /bin/bash docker_manager.sh
 #    entrypoint: /bin/bash
     stdin_open: true
     tty: true
@@ -117,6 +117,9 @@ services:
       target: foundryweb
     container_name: foundry-web
     hostname: foundry
+    ports:
+      # keep it off 8080 on local dev
+      - "8082:8080"
     depends_on:
       - mongodb
       - servicebus

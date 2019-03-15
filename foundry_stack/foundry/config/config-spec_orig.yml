@@ -2,8 +2,8 @@ pluginDir: "/var/data/foundry/foundry_plugins/plugins"
 database:
   host: 10.128.10.230
   port: 27017
-  user: pipeline2
-  pwd: "pass"
+  user: root
+  pwd: "example"
   db: discotest
   collection: records
 mq:
