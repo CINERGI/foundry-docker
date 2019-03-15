@@ -47,3 +47,9 @@ we end up having to rebuild when we want to modify them
 Ingest:
 Present, we will copy ingest configes into a container, the 
 exec and ingest command.
+
+Want to build a container to run a new shell command
+docker rmi dispatcher
+docker-compose build dispatcher
+
+revuild config

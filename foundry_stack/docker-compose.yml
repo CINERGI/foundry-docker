@@ -36,7 +36,7 @@ services:
   dispatcher:
     build:
       context: foundry
-      target: foundrybase
+      target: dispatcher
     container_name: foundry-dispatcher
     hostname: ec-dispatcher
     entrypoint: /bin/bash docker_dispatcher.sh
@@ -52,7 +52,7 @@ services:
       - es_node=elasticsearch
     volumes:
       - foundryData:/data
-      - gptmetadata:/opt/tomcat/webapps/metadata
+      - foundryData:/opt/tomcat/webapps/metadata
 #    links:
 #      - consumer:consumer
     networks:
@@ -62,7 +62,7 @@ services:
   consumer:
     build:
       context: foundry
-      target: foundrybase
+      target: consumer
     container_name: foundry-consumer
     hostname: consumer
     entrypoint: /bin/bash docker_consumer_head.sh
@@ -90,7 +90,7 @@ services:
   manager:
     build:
       context: foundry
-      target: foundrybase
+      target: dispatcher
     container_name: foundry-manager
     hostname: manager
     entrypoint: /bin/bash docker_manager.sh
@@ -110,6 +110,31 @@ services:
       - foundryData:/data
     networks:
       - default
+
+  ingestor:
+    build:
+      context: foundry
+      target: ingestor
+    container_name: foundry-ingestor
+    hostname: manager
+    entrypoint: /bin/bash docker_ingest_src_cli.sh
+    #    entrypoint: /bin/bash
+    stdin_open: true
+    tty: true
+    depends_on:
+      - mongodb
+      - servicebus
+    environment:
+      - es_node=elasticsearch
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - foundryData:/data
+    networks:
+      - default
+
 
   foundryweb:
     build:
@@ -131,7 +156,7 @@ services:
         hard: -1
     volumes:
       - foundryData:/data
-      - gptmetadata:/opt/tomcat/webapps/metadata
+      - foundryData:/opt/tomcat/webapps/metadata
     networks:
       - default
 
@@ -157,6 +182,4 @@ volumes:
   foundryData:
     driver: local
   mongodb1:
-    driver: local
-  gptmetadata:
     driver: local

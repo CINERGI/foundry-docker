@@ -17,5 +17,5 @@ echo $log_file
 #nohup java -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator -c cinergi-consumers-cfg-pipe-stage.xml -f &> $log_file &
 
 #java -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator -c cinergi-consumers-cfg-pipe-stage.xml $*
-java -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator  $*
+java -Xmx768m -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator  $*
 

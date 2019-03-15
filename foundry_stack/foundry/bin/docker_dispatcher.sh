@@ -14,4 +14,4 @@ echo $log_file
 
 # java -cp foundry-dispatcher-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.jms.producer.OplogMessageDispatcher -c cinergi-dispatcher-cfg-pipe-stage.xml  $*
 # no config. pass in on entrypoint, if needed
-java -cp foundry-dispatcher-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.jms.producer.OplogMessageDispatcher  $*
+java -cp foundry-dispatcher-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.jms.producer.PipelineMessageDispatcher  $*

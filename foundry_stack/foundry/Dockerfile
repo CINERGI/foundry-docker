@@ -88,7 +88,8 @@ RUN echo ${PROFILE}
 
 WORKDIR $HOME/Foundry/bin/
 RUN chmod a+x config_gen.sh consumer_head.sh dispatcher.sh manager.sh config_gen.sh docker_consumer_head.sh docker_dispatcher.sh docker_manager.sh
-COPY config/config-spec.yml .
+#COPY config/config-spec.yml .
+COPY config/config-spec_prod.yml config-spec.yml
 
 RUN  [ "./config_gen.sh", "-c config-spec.yml", "-p ${PROFILE}" ]
 #RUN mvn -X -q -f ../common/pom.xml exec:java -Dexec.mainClass="org.neuinfo.foundry.common.config.ConfigGenerator" -Dexec.args="$*"
@@ -99,11 +100,7 @@ WORKDIR $HOME/Foundry/
 # src/main/assembly/src.xml descriptors have hard coded id of prod
 ENV singleAssemblyId prod
 RUN mvn -P${PROFILE}   compile assembly:single -DskipTests \
-  && mvn -P ${PROFILE}   package -f ingestor-web/pom.xml -DskipTests \
-  && cp dispatcher/target/foundry-dispatcher-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
-  && cp consumers/target/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
-  && cp ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/ \
-  && cp common/target/foundry-common-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/
+  && mvn -P ${PROFILE}   package -f ingestor-web/pom.xml -DskipTests
 
 #######
 # one base
@@ -133,18 +130,57 @@ RUN mkdir -p /foundry /data/logs /data/foundry /data/config/
 WORKDIR $HOME/
 COPY --from=foundrybuild /home/foundry/Foundry/bin/ bin/
 #RUN pwd;ls -al;ls -al bin
-
 COPY config/ /data/config/
 WORKDIR $HOME/bin/
 
-COPY bin/docker_consumer_head.sh .
-COPY bin/docker_dispatcher.sh .
-COPY bin/docker_manager.sh .
-RUN chmod a+x config_gen.sh consumer_head.sh dispatcher.sh manager.sh config_gen.sh docker_consumer_head.sh docker_dispatcher.sh docker_manager.sh
-
-RUN pwd;ls -al
+#########
+# DISPATCHER, MANAGER
+#############
+FROM foundrybase AS dispatcher
+ENV HOME /foundry
+ENV singleAssemblyId prod
+WORKDIR $HOME/bin
+COPY --from=foundrybuild /home/foundry/Foundry/dispatcher/target/foundry-dispatcher-1.0-SNAPSHOT-${singleAssemblyId}.jar .
+COPY bin/docker_dispatcher.sh docker_dispatcher.sh
+COPY bin/docker_manager.sh docker_manager.sh
+RUN chmod a+x *.sh
+WORKDIR $HOME/bin/
 EXPOSE 9000
 ENTRYPOINT   ["/bin/bash"]
+
+#################
+# CONSUMER
+#################
+FROM foundrybase AS consumer
+ENV HOME /foundry
+ENV singleAssemblyId prod
+WORKDIR $HOME/bin
+COPY --from=foundrybuild /home/foundry/Foundry/consumers/target/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar .
+COPY bin/docker_consumer_head.sh docker_consumer_head.sh
+RUN  chmod a+x *.sh
+WORKDIR $HOME/bin/
+EXPOSE 9000
+ENTRYPOINT   ["./docker_consumer_head.sh"]
+
+#################
+# INGESTOR
+#################
+FROM foundrybase AS ingestor
+ENV HOME /foundry
+ENV singleAssemblyId prod
+WORKDIR $HOME/bin
+COPY bin/docker_ingest_src_cli.sh docker_ingest_src_cli.sh
+COPY --from=foundrybuild /home/foundry/Foundry/ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar .
+RUN chmod a+x *.sh
+WORKDIR $HOME/bin/
+EXPOSE 9000
+ENTRYPOINT   ["/bin/bash"]
+
+
+#  && cp common/target/foundry-common-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/
+# pwd;ls -al
+#EXPOSE 9000
+#ENTRYPOINT   ["/bin/bash"]
 
 ###################
 #try three machines
