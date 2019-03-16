@@ -1,4 +1,4 @@
-pluginDir: "/var/data/foundry/foundry_plugins/plugins"
+pluginDir: "/data/foundry/foundry_plugins/plugins"
 database:
     host: mongodb
     port: 27017
