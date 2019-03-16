@@ -126,11 +126,12 @@ RUN apt-get update \
 # in the interest of time, we mirror that code ran from /home/foundry
 ENV HOME /foundry
 RUN  chmod 777 /data
-RUN mkdir -p /foundry /data/logs /data/foundry /data/config/
+RUN mkdir -p /foundry /data/logs /data/foundry /data/config/ /data/foundry/foundry_plugins/plugins
 WORKDIR $HOME/
 COPY --from=foundrybuild /home/foundry/Foundry/bin/ bin/
 #RUN pwd;ls -al;ls -al bin
 COPY config/ /data/config/
+COPY stopwords/ /data/cinergi/
 WORKDIR $HOME/bin/
 
 #########

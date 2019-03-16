@@ -44,6 +44,11 @@ vm.max_map_count=262144
 startup shell scripts are copied in. If we use the ones in foundry, then
 we end up having to rebuild when we want to modify them
 
+
+Manager:
+docker-compose  exec --workdir /foundry/bin dispatcher /bin/bash docke
+r_manager.sh
+
 Ingest:
 Present, we will copy ingest configes into a container, the 
 exec and ingest command.
@@ -52,4 +57,4 @@ Want to build a container to run a new shell command
 docker rmi dispatcher
 docker-compose build dispatcher
 
-revuild config
+rebuild config

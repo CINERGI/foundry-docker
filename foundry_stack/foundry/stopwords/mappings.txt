@@ -1,0 +1,957 @@
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Instrument http://sweet.jpl.nasa.gov/2.3/matrInstrument.owl#Instrument > Radar http://sweet.jpl.nasa.gov/2.3/matrInstrument.owl#Radar
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > instrument package http://hydro10.sdsc.edu/cinergi_ontology/cinergi#instrument_package > Special Sensors-Ions, Electrons, And Scintillation Thermal Plasma Analysis Package http://hydro10.sdsc.edu/cinergi_ontology/cinergi#Special_Sensors-Ions,_Electrons,_and_Scintillation_thermal_plasma_analysis_package
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Platform http://gcmdservices.gsfc.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12 > Aircraft http://gcmdservices.gsfc.nasa.gov/kms/concept/227d9c3d-f631-402d-84ed-b8c5a562fc27
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Platform http://gcmdservices.gsfc.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12 > Balloons/Rockets http://gcmdservices.gsfc.nasa.gov/kms/concept/2196cc92-a5da-4233-9509-5523385da1d7
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Platform http://gcmdservices.gsfc.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12 > In Situ Land-based Platforms http://gcmdservices.gsfc.nasa.gov/kms/concept/4f396ff6-7bea-4ba4-afa3-198ebd914a4a
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Platform http://gcmdservices.gsfc.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12 > In Situ Ocean-based Platforms http://gcmdservices.gsfc.nasa.gov/kms/concept/e50b2a1a-7d9d-4c09-ac7e-dc29f0c08fc7
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Platform http://gcmdservices.gsfc.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12 > Interplanetary Spacecraft http://gcmdservices.gsfc.nasa.gov/kms/concept/16d65a72-e685-4c98-88a9-689c5f75d358
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Platform http://gcmdservices.gsfc.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12 > Navigation Platforms http://gcmdservices.gsfc.nasa.gov/kms/concept/1506fb17-7ac4-44ce-bde5-074885bdb2d2
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > Platform http://gcmdservices.gsfc.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12 > Space Stations/Manned Spacecraft http://gcmdservices.gsfc.nasa.gov/kms/concept/388e72a1-b851-4b78-9e69-747e06ae215f
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > SATELLITES http://gcmdservices.gsfc.nasa.gov/kms/concept/17b1489c-fba7-4252-bf23-b981148343f1 > Earth Observation Satellites http://gcmdservices.gsfc.nasa.gov/kms/concept/3466eed1-2fbb-49bf-ab0b-dc08731d502b
+Equipment http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment > SATELLITES http://gcmdservices.gsfc.nasa.gov/kms/concept/17b1489c-fba7-4252-bf23-b981148343f1 > Solar/Space Observation Satellites http://gcmdservices.gsfc.nasa.gov/kms/concept/8e8b7689-0a8e-47a4-9c68-5f6a207104d5
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Arc http://sweet.jpl.nasa.gov/2.3/realmGeolOrogen.owl#Arc
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Basin http://sweet.jpl.nasa.gov/2.3/realmGeolBasin.owl#Basin
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Caldera http://sweet.jpl.nasa.gov/2.3/realmLandVolcanic.owl#Caldera
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Diapir http://sweet.jpl.nasa.gov/2.3/realmLandTectonic.owl#Diapir
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Footwall http://sweet.jpl.nasa.gov/2.3/realmLandTectonic.owl#Footwall
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Geologic Province http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicProvince
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Geothermal http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Geothermal
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Lava Area http://yago-knowledge.org/resource/geoclass_lava_area
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Tectonic Assemblage http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#TectonicAssemblage
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Vent http://sweet.jpl.nasa.gov/2.3/realmLandVolcanic.owl#Vent
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Geologic Feature http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicFeature > Volcanic System http://sweet.jpl.nasa.gov/2.3/realmLandVolcanic.owl#VolcanicSystem
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > arete http://purl.obolibrary.org/obo/ENVO_00000429
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > dirt cone http://purl.obolibrary.org/obo/ENVO_00000430
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > glacial lake http://purl.obolibrary.org/obo/ENVO_00000488
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > ice field http://purl.obolibrary.org/obo/ENVO_00000299
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > ice mass http://purl.obolibrary.org/obo/ENVO_01000293
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > iceberg http://purl.obolibrary.org/obo/ENVO_00000298
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > moraine http://purl.obolibrary.org/obo/ENVO_00000177
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > permafrost http://purl.obolibrary.org/obo/ENVO_00000134
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > snow field http://purl.obolibrary.org/obo/ENVO_00000146
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > strand crack http://purl.obolibrary.org/obo/ENVO_00009726
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > glacial feature http://purl.obolibrary.org/obo/ENVO_00000131 > talik http://purl.obolibrary.org/obo/ENVO_00000552
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > abandoned watercourse http://purl.obolibrary.org/obo/ENVO_00000524
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Aquiclude http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#Aquiclude
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Aquifier http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#Aquifer
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Aquifuge http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#Aquifuge
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Aquitard http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#Aquitard
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Bank http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#Bank
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > bar http://purl.obolibrary.org/obo/ENVO_00000167
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > beaver dam http://purl.obolibrary.org/obo/ENVO_00000500
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Body Of Water http://sweet.jpl.nasa.gov/2.3/realmHydroBody.owl#BodyOfWater
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Cascading Water http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#CascadingWater
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Cone Of Depression http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#ConeOfDepression
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Cone Of Impression http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#ConeOfImpression
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Confined Bed http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#ConfinedBed
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Confined Unit http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#ConfinedUnit
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Confined Zone http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#ConfinedZone
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > confluence http://purl.obolibrary.org/obo/ENVO_00000272
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > distributary http://purl.obolibrary.org/obo/ENVO_00000069
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Distributary http://yago-knowledge.org/resource/geoclass_distributary
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Groundwater Level http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#GroundwaterLevel
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > island http://purl.obolibrary.org/obo/ENVO_00000098
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > levee http://purl.obolibrary.org/obo/ENVO_00000178
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > moatan http://purl.obolibrary.org/obo/ENVO_00000536
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > phreatic zone http://purl.obolibrary.org/obo/ENVO_00000329
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > polder http://purl.obolibrary.org/obo/ENVO_00000286
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Potentiometric Surface http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#PotentiometricSurface
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Saturated Zone http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#SaturatedZone
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Stream http://yago-knowledge.org/resource/geoclass_stream
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Surface Water http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#SurfaceWater
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > tributary http://purl.obolibrary.org/obo/ENVO_00000495
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Vadose Zone http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#VadoseZone
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > vadoze zone http://purl.obolibrary.org/obo/ENVO_00000328
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Warm Pool http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#WarmPool
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > water body http://purl.obolibrary.org/obo/ENVO_00000063
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Water Column http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#WaterColumn
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Water Table http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#WaterTable
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > waterfall http://purl.obolibrary.org/obo/ENVO_00000040
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Waterfall http://yago-knowledge.org/resource/geoclass_waterfall
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Waterhole http://yago-knowledge.org/resource/geoclass_waterhole
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > well http://purl.obolibrary.org/obo/ENVO_00000026
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Hydrologic Feature http://sweet.jpl.nasa.gov/2.3/realmHydro.owl#HydrosphereFeature > Well http://yago-knowledge.org/resource/geoclass_well
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > alluvial fan http://purl.obolibrary.org/obo/ENVO_00000314
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > badland http://purl.obolibrary.org/obo/ENVO_00000127
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > beach http://purl.obolibrary.org/obo/ENVO_00000091
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > boulder field http://purl.obolibrary.org/obo/ENVO_00000537
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > cave http://purl.obolibrary.org/obo/ENVO_00000067
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > cave system http://purl.obolibrary.org/obo/ENVO_00000013
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > cave wall http://purl.obolibrary.org/obo/ENVO_00002144
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > clearing http://purl.obolibrary.org/obo/ENVO_00000444
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > cleft http://purl.obolibrary.org/obo/ENVO_00000526
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > depression http://purl.obolibrary.org/obo/ENVO_00000309
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > desert http://purl.obolibrary.org/obo/ENVO_00000097
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > elevation http://purl.obolibrary.org/obo/ENVO_00000176
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > Estuary http://yago-knowledge.org/resource/geoclass_estuary
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > Fjord http://yago-knowledge.org/resource/geoclass_fjord
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > Fjords http://yago-knowledge.org/resource/geoclass_fjords
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > gravel field http://purl.obolibrary.org/obo/ENVO_00000548
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > karst http://purl.obolibrary.org/obo/ENVO_00000175
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > landslide http://purl.obolibrary.org/obo/ENVO_00000520
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > mineral deposit http://purl.obolibrary.org/obo/ENVO_01000255
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > natural arch http://purl.obolibrary.org/obo/ENVO_00000414
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > outcrop http://purl.obolibrary.org/obo/ENVO_01000302
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > peak http://purl.obolibrary.org/obo/ENVO_00000480
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > peninsula http://purl.obolibrary.org/obo/ENVO_00000305
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > plain http://purl.obolibrary.org/obo/ENVO_00000086
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > quicksand area http://purl.obolibrary.org/obo/ENVO_00000285
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > rill http://purl.obolibrary.org/obo/ENVO_00000496
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > Seamount http://yago-knowledge.org/resource/geoclass_seamount
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > slope http://purl.obolibrary.org/obo/ENVO_00002000
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > Tablemount http://yago-knowledge.org/resource/geoclass_tablemount
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > terrace http://purl.obolibrary.org/obo/ENVO_00000508
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > tunnel http://purl.obolibrary.org/obo/ENVO_00000068
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > underground physiographic feature http://purl.obolibrary.org/obo/ENVO_00002184
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > volcanic feature http://purl.obolibrary.org/obo/ENVO_00000094
+Feature http://sweet.jpl.nasa.gov/2.3/realm.owl#Realm > Physiographic Feature http://purl.obolibrary.org/obo/ENVO_00000191 > watershed http://purl.obolibrary.org/obo/ENVO_00000292
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Experiment http://www.ebi.ac.uk/efo/EFO_0002694 > Assay http://purl.obolibrary.org/obo/OBI_0000070
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Human Activity (Other) http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#ActivityUnclassified > Hydraulic Fracturing http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Hydraulic_Fracturing
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Automated http://vocabulary.odm2.org/specimentype/automated/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Category Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#CategoryObservation
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Complex Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#ComplexObservation
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core half round http://vocabulary.odm2.org/specimentype/coreHalfRound/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core http://vocabulary.odm2.org/specimentype/core/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core piece http://vocabulary.odm2.org/specimentype/corePiece/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core quarter round http://vocabulary.odm2.org/specimentype/coreQuarterRound/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core section half http://vocabulary.odm2.org/specimentype/coreSectionHalf/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core section http://vocabulary.odm2.org/specimentype/coreSection/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core sub-piece http://vocabulary.odm2.org/specimentype/coreSub-Piece/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Core whole round http://vocabulary.odm2.org/specimentype/coreWholeRound/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Count Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#CountObservation
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Cuttings http://vocabulary.odm2.org/specimentype/cuttings/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Discrete Coverage Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#DiscreteCoverageObservation
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Dredge http://vocabulary.odm2.org/specimentype/dredge/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Foliage digestion http://vocabulary.odm2.org/specimentype/foliageDigestion/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Foliage leaching http://vocabulary.odm2.org/specimentype/foliageLeaching/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Forest floor digestion http://vocabulary.odm2.org/specimentype/forestFloorDigestion/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Geometry Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#GeometryObservation
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Grab http://vocabulary.odm2.org/specimentype/grab/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Individual sample http://vocabulary.odm2.org/specimentype/individualSample/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Litter fall digestion http://vocabulary.odm2.org/specimentype/litterFallDigestion/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Measurement http://hydro10.sdsc.edu/cinergi_ontology/observation#Measurement
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Oriented core http://vocabulary.odm2.org/specimentype/orientedCore/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Other http://vocabulary.odm2.org/specimentype/other/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Petri dish (dry deposition) http://vocabulary.odm2.org/specimentype/petriDishDryDeposition/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Precipitation bulk http://vocabulary.odm2.org/specimentype/precipitationBulk/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Rock powder http://vocabulary.odm2.org/specimentype/rockPowder/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Standard reference specimen http://vocabulary.odm2.org/specimentype/standardReferenceSpecimen/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Temporal Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#TemporalObservation
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Terrestrial section http://vocabulary.odm2.org/specimentype/terrestrialSection/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > The specimen type is unknown http://vocabulary.odm2.org/specimentype/theSpecimenTypeIsUnknown/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Thin section http://vocabulary.odm2.org/specimentype/thinSection/
+Human Activities http://purl.bioontology.org/ontology/MESH/D006802 > Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#Observation > Truth Observation http://hydro10.sdsc.edu/cinergi_ontology/observation#TruthObservation
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Biological Material http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Biological_Material > Anatomical Entity http://purl.obolibrary.org/obo/UBERON_0001062
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Biological Material http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Biological_Material > Organisms http://purl.obolibrary.org/obo/NCBITaxon_1
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > atom http://purl.obolibrary.org/obo/CHEBI_33250
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental aluminium http://purl.obolibrary.org/obo/CHEBI_33628
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental antimony http://purl.obolibrary.org/obo/CHEBI_36922
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental argon http://purl.obolibrary.org/obo/CHEBI_49991
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental arsenic http://purl.obolibrary.org/obo/CHEBI_35826
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental astatine http://purl.obolibrary.org/obo/CHEBI_37139
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental barium http://purl.obolibrary.org/obo/CHEBI_37134
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental beryllium http://purl.obolibrary.org/obo/CHEBI_33784
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental boron http://purl.obolibrary.org/obo/CHEBI_33609
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental bromine http://purl.obolibrary.org/obo/CHEBI_36894
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental cadmium http://purl.obolibrary.org/obo/CHEBI_37249
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental calcium http://purl.obolibrary.org/obo/CHEBI_35155
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental carbon http://purl.obolibrary.org/obo/CHEBI_33415
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental cerium http://purl.obolibrary.org/obo/CHEBI_37265
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental chlorine http://purl.obolibrary.org/obo/CHEBI_33431
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental copper http://purl.obolibrary.org/obo/CHEBI_37404
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental europium http://purl.obolibrary.org/obo/CHEBI_37267
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental fluorine http://purl.obolibrary.org/obo/CHEBI_36892
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental gadolinium http://purl.obolibrary.org/obo/CHEBI_37285
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental germanium http://purl.obolibrary.org/obo/CHEBI_50087
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental gold http://purl.obolibrary.org/obo/CHEBI_33970
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental halogen http://purl.obolibrary.org/obo/CHEBI_33434
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental helium http://purl.obolibrary.org/obo/CHEBI_33680
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental hydrogen http://purl.obolibrary.org/obo/CHEBI_33260
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental indium http://purl.obolibrary.org/obo/CHEBI_37114
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental iodine http://purl.obolibrary.org/obo/CHEBI_36893
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental iron http://purl.obolibrary.org/obo/CHEBI_82663
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental krypton http://purl.obolibrary.org/obo/CHEBI_49986
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental lead http://purl.obolibrary.org/obo/CHEBI_37193
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental magnesium http://purl.obolibrary.org/obo/CHEBI_33973
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental manganese http://purl.obolibrary.org/obo/CHEBI_35115
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental mercury http://purl.obolibrary.org/obo/CHEBI_35113
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental molecule http://purl.obolibrary.org/obo/CHEBI_25362
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental molybdenum http://purl.obolibrary.org/obo/CHEBI_37237
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental neon http://purl.obolibrary.org/obo/CHEBI_49995
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental nitrogen http://purl.obolibrary.org/obo/CHEBI_33267
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental oxygen http://purl.obolibrary.org/obo/CHEBI_33262
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental palladium http://purl.obolibrary.org/obo/CHEBI_52858
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental phosphorus http://purl.obolibrary.org/obo/CHEBI_33464
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental platinum http://purl.obolibrary.org/obo/CHEBI_49202
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental pnictogen http://purl.obolibrary.org/obo/CHEBI_33465
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental potassium http://purl.obolibrary.org/obo/CHEBI_37247
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental selenium http://purl.obolibrary.org/obo/CHEBI_36904
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental silicon http://purl.obolibrary.org/obo/CHEBI_37763
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental silver http://purl.obolibrary.org/obo/CHEBI_33966
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental sodium http://purl.obolibrary.org/obo/CHEBI_37246
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental strontium http://purl.obolibrary.org/obo/CHEBI_39131
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental sulfur http://purl.obolibrary.org/obo/CHEBI_33403
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental tellurium http://purl.obolibrary.org/obo/CHEBI_36660
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental thallium http://purl.obolibrary.org/obo/CHEBI_37113
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental tin http://purl.obolibrary.org/obo/CHEBI_37767
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental uranium http://purl.obolibrary.org/obo/CHEBI_50559
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental vanadium http://purl.obolibrary.org/obo/CHEBI_35171
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental xenon http://purl.obolibrary.org/obo/CHEBI_49984
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > elemental zinc http://purl.obolibrary.org/obo/CHEBI_37253
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > group http://purl.obolibrary.org/obo/CHEBI_24433
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Chemical Entity http://purl.obolibrary.org/obo/CHEBI_24431 > molecular entity http://purl.obolibrary.org/obo/CHEBI_23367
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > chemical substance http://purl.obolibrary.org/obo/CHEBI_59999 > biogenic substance http://purl.obolibrary.org/obo/CHEBI_64392
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > chemical substance http://purl.obolibrary.org/obo/CHEBI_59999 > Dissolved Substance http://sweet.jpl.nasa.gov/2.3/matr.owl#DissolvedSubstance
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > chemical substance http://purl.obolibrary.org/obo/CHEBI_59999 > mixture http://purl.obolibrary.org/obo/CHEBI_60004
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > chemical substance http://purl.obolibrary.org/obo/CHEBI_59999 > Particulate Substance http://sweet.jpl.nasa.gov/2.3/matrAerosol.owl#Particulate
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > chemical substance http://purl.obolibrary.org/obo/CHEBI_59999 > pure substance http://purl.obolibrary.org/obo/CHEBI_60003
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > chemical substance http://purl.obolibrary.org/obo/CHEBI_59999 > wax http://purl.obolibrary.org/obo/CHEBI_73702
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > aerosol http://purl.obolibrary.org/obo/ENVO_00010505
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > air http://purl.obolibrary.org/obo/ENVO_00002005
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > anthropogenic environmental material http://purl.obolibrary.org/obo/ENVO_0010001
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > clay http://purl.obolibrary.org/obo/ENVO_00002982
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > dust http://purl.obolibrary.org/obo/ENVO_00002008
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > emulsion http://purl.obolibrary.org/obo/ENVO_00010506
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > foam http://purl.obolibrary.org/obo/ENVO_00005738
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > gravel http://purl.obolibrary.org/obo/ENVO_01000018
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > ice http://purl.obolibrary.org/obo/ENVO_01000277
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > lava http://purl.obolibrary.org/obo/ENVO_01000231
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > mineral http://purl.obolibrary.org/obo/ENVO_01000256
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > mud http://purl.obolibrary.org/obo/ENVO_01000001
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > oil http://purl.obolibrary.org/obo/ENVO_00002985
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > organic material http://purl.obolibrary.org/obo/ENVO_01000155
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > Rock Material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology.owl#rock_material
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > scum http://purl.obolibrary.org/obo/ENVO_00003930
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > sediment http://purl.obolibrary.org/obo/ENVO_00002007
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > silt http://purl.obolibrary.org/obo/ENVO_01000016
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > Soil http://purl.obolibrary.org/obo/ENVO_00001998
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > vapour http://purl.obolibrary.org/obo/ENVO_01000264
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Environmental Material http://purl.obolibrary.org/obo/ENVO_00010483 > water http://purl.obolibrary.org/obo/ENVO_00002006
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Material (Other) http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#MaterialUnclassified > Maps/Charts/Photographs http://gcmdservices.gsfc.nasa.gov/kms/concept/af11dd2a-e514-4329-bbc5-0f36f2776a26
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Material (Other) http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#MaterialUnclassified > subatomic particle http://purl.obolibrary.org/obo/CHEBI_36342
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > azurite http://purl.obolibrary.org/obo/CHEBI_52735
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > biogenic mineral http://purl.obolibrary.org/obo/CHEBI_64391
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > carbonate mineral http://purl.obolibrary.org/obo/CHEBI_46720
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > diatomaceous earth http://purl.obolibrary.org/obo/CHEBI_82661
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > halide mineral http://purl.obolibrary.org/obo/CHEBI_46714
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > hydrated silica http://purl.obolibrary.org/obo/CHEBI_64393
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > Mineralogy http://www.vocabularyserver.com/usgs/index.php?tema=1052&/mineralogy
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > native element mineral http://purl.obolibrary.org/obo/CHEBI_46730
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > oxide mineral http://purl.obolibrary.org/obo/CHEBI_46725
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > phosphate mineral http://purl.obolibrary.org/obo/CHEBI_46723
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > silicate mineral http://purl.obolibrary.org/obo/CHEBI_46663
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > sulfate mineral http://purl.obolibrary.org/obo/CHEBI_46716
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Mineral http://purl.obolibrary.org/obo/CHEBI_46662 > sulfide mineral http://purl.obolibrary.org/obo/CHEBI_46717
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Alkali Feldspar Granite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#alkali_feldspar_granite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Alkali Feldspar Rhyolite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#alkali_feldspar_rhyolite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Alkali Feldspar Trachyte http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#alkali_feldspar_trachyte
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Alkali Feldspar Trachytic Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#alkali_feldspar_trachytic_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Alkali Olivine Basalt http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#alkali_olivine_basalt
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Anorthosite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#anorthosite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Anthracite Coal http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#anthracite_coal
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Arenite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#arenite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Ash And Lapilli http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#ash_and_lapilli
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Basalt http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#basalt
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Basanite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#basanite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Bituminous Coal http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#bituminous_coal
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Boninite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#boninite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Bouder-gravel-size Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#boulder_gravel_size_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Carbonate-rich Mudstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#carbonate_rich_mudstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Carbonate Ooze http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#carbonate_ooze
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Chalk http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#chalk
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Clastic Mudstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#clastic_mudstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Clay http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#clay
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Claystone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#claystone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Cobble-gravel-size Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#cobble_gravel_size_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Dacite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#dacite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Dioritoid http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#dioritoid
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Doleritic Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#doleritic_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Dolomite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#dolostone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Dolomitic Or Magnesian Sedimentary Material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#dolomitic_or_magnesian_sedimentary_material
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > endolithic environment http://purl.obolibrary.org/obo/ENVO_01000303
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Exotic Composition Evaporite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#exotic_evaporite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foid-bearing Alkali-feldspar Trachyte http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foid_bearing_alkali_feldspar_trachyte
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foid-bearing Anorthosite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foid_bearing_anorthosite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foid-bearing Latite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foid_bearing_latite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foid-bearing Trachyte http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foid_bearing_trachyte
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foid Bearing Gabbro http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foid_bearing_gabbro
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foid Diorite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foid_diorite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foid Monzosyenite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foid_monzosyenite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Foidite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#foidite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Gabbroid http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#gabbroid
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Generic Conglomerate http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#generic_conglomerate
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Generic Mudstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#generic_mudstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Generic Sandstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#generic_sandstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Glass-rich Igneous Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#glass_rich_igneous_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Granulite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#granulite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Gravel http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#gravel
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Gypsum Or Anhydrite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_gypsum_or_anhydrite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > High-magnesium Fine-grained Igneous Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#high_magnesium_fine_grained_igneous_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Hornblendite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#hornblendite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Hybrid Sedimentary Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#hybrid_sedimentary_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Impure Calcareous Carbonate Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#impure_calcareous_carbonate_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Impure Carbonate Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#impure_carbonate_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Impure Carbonate Sedimentary Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#impure_carbonate_sedimentary_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Impure Dolomitic Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#impure_dolomitic_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Impure Dolostone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#impure_dolostone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Impure Limestone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#impure_limestone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Label http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#basanitic_foidite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Latite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#latite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Lignite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#lignite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Limestone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#limestone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Material Formed In Surficial Environment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#material_formed_in_surficial_environment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Metasomatic Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#metasomatic_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Monzogabbroic Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#monzogabbroic_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Monzogranite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#monzogranite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Mud http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#mud
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > oasis http://purl.obolibrary.org/obo/ENVO_01001304
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Organic-bearing Mudstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#organic_bearing_mudstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Orthogneiss http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#orthogneiss
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pebble-gravel-size Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pebble_gravel_size_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pegmatite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pegmatite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Phonolite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#phonolite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Phonolitic Basanite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#phonolitic_basanite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Phonolitic Foidite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#phonolitic_foidite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Phonolitic Tephrite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#phonolitic_tephrite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Phyllite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#phyllite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > piece of rock http://purl.obolibrary.org/obo/ENVO_00000339
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pure Calcareous Carbonate Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pure_calcareous_carbonate_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pure Carbonate Mudstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pure_carbonate_mudstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pure Carbonate Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pure_carbonate_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pure Carbonate Sedimentary Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pure_carbonate_sedimentary_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pure Dolomitic Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pure_dolomitic_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Pyroxenite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#pyroxenite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Quartz Alkali-feldspar Trachyte http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#quartz_alkali_feldspar_trachyte
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Quartz Anorthosite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#quartz_anorthosite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Quartz Latite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#quartz_latite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Quartz Trachyte http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#quartz_trachyte
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Residual Material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#residual_material
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Rhyolite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rhyolite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Rock Salt http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_salt
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > rocky slope http://purl.obolibrary.org/obo/ENVO_01000319
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Sand-size Sediment http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#sand_size_sediment
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Sand http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#sand
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > sand http://purl.obolibrary.org/obo/ENVO_01000017
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Sapropel http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#sapropel
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > scree http://purl.obolibrary.org/obo/ENVO_00000194
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > sedimentary rock http://purl.obolibrary.org/obo/ENVO_00002016
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Silicate Mudstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#silicate_mudstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Siliceous Ooze http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#siliceous_ooze
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Silt http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#silt
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Siltstone http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#siltstone
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Skarn http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#skarn
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Spilite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#spilite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Syenogranite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#syenogranite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Tephrite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#tephrite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Tephritic Foidite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#tephritic_foidite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Tephritic Phonolite http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#tephritic_phonolite
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Tholeiitic Basalt http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#tholeiitic_basalt
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Trachyte http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#trachyte
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Trachytic Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#trachytic_rock
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Travertine http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#travertine
+material entity http://purl.obolibrary.org/obo/BFO_0000040 > Rock material http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#rock_material > Ultramafic Igneous Rock http://hydro10.sdsc.edu/cinergi_ontology/CGI_Lithology#ultramafic_igneous_rock
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Acceleration http://hydro10.sdsc.edu/cinergi_ontology/basic#Acceleration
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Angular Velocity http://hydro10.sdsc.edu/cinergi_ontology/basic#AngularVelocity
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Area http://hydro10.sdsc.edu/cinergi_ontology/basic#Area
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Currency http://hydro10.sdsc.edu/cinergi_ontology/basic#Currency
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Dimensionless Measures http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Dimensionless_Measures
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Geothermal Potential http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Geothermal_Potential
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Infiltration Capacity http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Infiltration_capacity
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Measurement http://hydro10.sdsc.edu/cinergi_ontology/observation#Measurement
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Permeability http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Permeability
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > physical quality http://purl.obolibrary.org/obo/PATO_0001018
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Physical Quantity http://sweet.jpl.nasa.gov/2.3/propQuantity.owl#PhysicalQuantity
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Scale http://hydro10.sdsc.edu/cinergi_ontology/basic#Scale
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Thermal Maturity http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Thermal_Maturity
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Time http://hydro10.sdsc.edu/cinergi_ontology/basic#Time
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Velocity http://hydro10.sdsc.edu/cinergi_ontology/basic#Velocity
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Volume http://hydro10.sdsc.edu/cinergi_ontology/basic#Volume
+namedProperty http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty > Measure http://hydro10.sdsc.edu/cinergi_ontology/basic#Measure > Weight http://hydro10.sdsc.edu/cinergi_ontology/basic#Weight
+Organization http://purl.obolibrary.org/obo/OBI_0000245 > Commercial Organization http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54620 > COMMERCIAL http://gcmdservices.gsfc.nasa.gov/kms/concept/1bb6821d-8534-40ce-a6ee-7c88ce4d3c9f
+Organization http://purl.obolibrary.org/obo/OBI_0000245 > Government Organization http://schema.org/GovernmentOrganization > GOVERNMENT AGENCIES-NON-US http://gcmdservices.gsfc.nasa.gov/kms/concept/224d4001-e30d-4069-81ac-8211750ac641
+Organization http://purl.obolibrary.org/obo/OBI_0000245 > Government Organization http://schema.org/GovernmentOrganization > GOVERNMENT AGENCIES-U.S. FEDERAL AGENCIES http://gcmdservices.gsfc.nasa.gov/kms/concept/2b890e5b-1b50-4454-90a9-538dd891da9a
+Organization http://purl.obolibrary.org/obo/OBI_0000245 > Institution http://vivoweb.org/ontology/core#Institute > ACADEMIC http://gcmdservices.gsfc.nasa.gov/kms/concept/7700280b-68ee-4644-bf5e-84e7a6adf897
+Organization http://purl.obolibrary.org/obo/OBI_0000245 > Institution http://vivoweb.org/ontology/core#Institute > CONSORTIA/INSTITUTIONS http://gcmdservices.gsfc.nasa.gov/kms/concept/aef2fc80-def0-46a4-9259-9dc37e80ed08
+Organization http://purl.obolibrary.org/obo/OBI_0000245 > Institution http://vivoweb.org/ontology/core#Institute > Providers http://gcmdservices.gsfc.nasa.gov/kms/concept/a158f804-b000-4013-9513-cee7790381c3
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Atmospheric Process http://www.semanticweb.org/administrator/ontologies/2015/5/untitled-ontology-4#Atmospheric_Process > Precipitation http://www.vocabularyserver.com/usgs/index.php?tema=1319&/precipitation-atmospheric
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Biological Process http://purl.obolibrary.org/obo/GO_0008150 > multi-organism process http://purl.obolibrary.org/obo/GO_0051704
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Biological Process http://purl.obolibrary.org/obo/GO_0008150 > response to stimulus http://purl.obolibrary.org/obo/GO_0050896
+Process http://purl.obolibrary.org/obo/BFO_0000015 > chemical process http://purl.bioontology.org/ontology/MESH/D055599 > Absorption http://hydro10.sdsc.edu/cinergi_ontology/cinergi_base#absorption
+Process http://purl.obolibrary.org/obo/BFO_0000015 > glacial process http://sweet.jpl.nasa.gov/2.3/phenCryo.owl#GlacialProcess > Glacial Landform http://sweet.jpl.nasa.gov/2.3/realmLandGlacial.owl#GlacialLandform
+Process http://purl.obolibrary.org/obo/BFO_0000015 > glacial process http://sweet.jpl.nasa.gov/2.3/phenCryo.owl#GlacialProcess > Glaciation http://www.vocabularyserver.com/usgs/index.php?tema=686&/glaciation
+Process http://purl.obolibrary.org/obo/BFO_0000015 > glacial process http://sweet.jpl.nasa.gov/2.3/phenCryo.owl#GlacialProcess > Glaciology http://www.vocabularyserver.com/usgs/index.php?tema=688&/glaciology
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > Floods http://www.vocabularyserver.com/usgs/index.php?tema=581&/floods
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > Groundwater Storage http://sweet.jpl.nasa.gov/2.3/phenHydro.owl#GroundwaterStorage
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > Hydrologic Cycle http://sweet.jpl.nasa.gov/2.3/phenCycleMaterial.owl#HydrologicCycle
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > Hydrology http://www.vocabularyserver.com/usgs/index.php?tema=797&/hydrology
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > Hydrothermal Alteration http://sweet.jpl.nasa.gov/2.3/phenHydro.owl#HydrothermalAlteration
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > Impact Cratering http://www.vocabularyserver.com/usgs/index.php?tema=818&/impact-cratering
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > LandWater Circulation http://sweet.jpl.nasa.gov/2.3/phenHydro.owl#LandWaterCirculation
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Hydrologic Process http://www.vocabularyserver.com/usgs/index.php?tema=796&/hydrologic-processes > SnowCover http://sweet.jpl.nasa.gov/2.3/phenHydro.owl#SnowCover
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Ocean Process http://www.vocabularyserver.com/usgs/index.php?tema=1150&/ocean-processes > Coastal Phenomena http://sweet.jpl.nasa.gov/2.3/phenOceanCoastal.owl#CoastalPhenomena
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Ocean Process http://www.vocabularyserver.com/usgs/index.php?tema=1150&/ocean-processes > Ocean Circulation http://sweet.jpl.nasa.gov/2.3/phenOceanDynamics.owl#OceanCirculation
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Ocean Process http://www.vocabularyserver.com/usgs/index.php?tema=1150&/ocean-processes > Ocean Current http://sweet.jpl.nasa.gov/2.3/phenOceanDynamics.owl#OceanCurrent
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Ocean Process http://www.vocabularyserver.com/usgs/index.php?tema=1150&/ocean-processes > Ocean Mixing http://sweet.jpl.nasa.gov/2.3/phenOceanDynamics.owl#OceanMixing
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Ocean Process http://www.vocabularyserver.com/usgs/index.php?tema=1150&/ocean-processes > Tsunami http://sweet.jpl.nasa.gov/2.3/phenOceanDynamics.owl#Tsunami
+Process http://purl.obolibrary.org/obo/BFO_0000015 > surficial process http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#surficial_process > Bedload http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#bedload
+Process http://purl.obolibrary.org/obo/BFO_0000015 > surficial process http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#surficial_process > Sediment Transport http://www.vocabularyserver.com/usgs/index.php?tema=1489&/sediment-transport
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Composite Process http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#CompositeProcess
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Continenetal Drift http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#ContinenetalDrift
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Continental Breakup http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#ContinentalBreakup
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Continental Collision http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#ContinentalCollision
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Creep http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#Creep
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Extension Event http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#ExtensionEvent
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Intra-plate Process http://sweet.jpl.nasa.gov/2.3/phenGeol.owl#IntraplateProcess
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Isostatic Rebound http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#IsostaticRebound
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Neotectonic Processes http://www.vocabularyserver.com/usgs/index.php?tema=1104&/neotectonic-processes
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Orogenic Collapse http://sweet.jpl.nasa.gov/2.3/phenGeol.owl#OrogenicCollapse
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Orogeny http://sweet.jpl.nasa.gov/2.3/phenGeol.owl#Orogeny
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Plate Convergence http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#PlateConvergence
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Plate Divergence http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#PlateDivergence
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Seismic Process http://sweet.jpl.nasa.gov/2.3/phenGeolSeismicity.owl#SeismicPhenomena
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Spreading http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#Spreading
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Subduction http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#Subduction
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Tectonic Uplift http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#TectonicUplift
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Tectonics http://en.wikipedia.org/wiki/Tectonics
+Process http://purl.obolibrary.org/obo/BFO_0000015 > Tectonic Process http://www.vocabularyserver.com/usgs/index.php?tema=1651&/tectonic-processes > Transform Faulting http://sweet.jpl.nasa.gov/2.3/phenGeolTectonic.owl#TransformFaulting
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > atmosphere http://purl.obolibrary.org/obo/ENVO_01000267 > atmospheric boundary layer http://purl.obolibrary.org/obo/ENVO_01000323
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > atmosphere http://purl.obolibrary.org/obo/ENVO_01000267 > atmospheric Taylor column http://purl.obolibrary.org/obo/ENVO_01000300
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > atmosphere http://purl.obolibrary.org/obo/ENVO_01000267 > atmospheric water vapour http://purl.obolibrary.org/obo/ENVO_01000268
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > Geosphere http://sweet.jpl.nasa.gov/2.3/realm.owl#Geosphere > Geologic Structure http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#GeologicStructure
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > Geosphere http://sweet.jpl.nasa.gov/2.3/realm.owl#Geosphere > Land http://sweet.jpl.nasa.gov/2.3/realm.owl#Land
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > habitat http://purl.obolibrary.org/obo/ENVO_0002036 > Habitat Alteration http://www.vocabularyserver.com/usgs/index.php?tema=739&/habitat-alteration
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > Hydrosphere http://sweet.jpl.nasa.gov/2.3/realm.owl#Hydrosphere > Cryosphere http://sweet.jpl.nasa.gov/2.3/realm.owl#Cryosphere
+Realm http://sweet.jpl.nasa.gov/2.3/realm.owl#PlanetaryRealm > Hydrosphere http://sweet.jpl.nasa.gov/2.3/realm.owl#Hydrosphere > Ocean http://sweet.jpl.nasa.gov/2.3/realm.owl#Ocean
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > Data Set http://hydro10.sdsc.edu/cinergi_ontology/dataset#DataSet > Metadata record http://hydro10.sdsc.edu/cinergi_ontology/metadata#Metadata
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > Data Set http://hydro10.sdsc.edu/cinergi_ontology/dataset#DataSet > Text data set http://www.ebi.ac.uk/efo/swo/SWO_0000116
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > Repository http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Repository > Information Repository http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Information_Repository
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'AffyCompatible' http://www.ebi.ac.uk/efo/swo/SWO_0000021
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'affycoretools' http://www.ebi.ac.uk/efo/swo/SWO_0000459
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'AffyExpress' http://www.ebi.ac.uk/efo/swo/SWO_0000022
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'annotate' http://www.ebi.ac.uk/efo/swo/SWO_0000466
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'AnnotationDbi' http://www.ebi.ac.uk/efo/swo/SWO_0000035
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'apComplex' http://www.ebi.ac.uk/efo/swo/SWO_0000470
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'ArrayTools' http://www.ebi.ac.uk/efo/swo/SWO_0000041
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BCRANK' http://www.ebi.ac.uk/efo/swo/SWO_0000050
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'beadarray' http://www.ebi.ac.uk/efo/swo/SWO_0000479
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'beadarraySNP' http://www.ebi.ac.uk/efo/swo/SWO_0000480
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'betr' http://www.ebi.ac.uk/efo/swo/SWO_0000481
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BGmix' http://www.ebi.ac.uk/efo/swo/SWO_0000053
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BicARE' http://www.ebi.ac.uk/efo/swo/SWO_0000066
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'Biobase' http://www.ebi.ac.uk/efo/swo/SWO_0000070
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BiocCaseStudies' http://www.ebi.ac.uk/efo/swo/SWO_0000071
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'biocDatasets' http://www.ebi.ac.uk/efo/swo/SWO_0000486
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'biocGraph' http://www.ebi.ac.uk/efo/swo/SWO_0000487
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'biocViews' http://www.ebi.ac.uk/efo/swo/SWO_0000488
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BioMVCClass' http://www.ebi.ac.uk/efo/swo/SWO_0000068
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'Biostrings' http://www.ebi.ac.uk/efo/swo/SWO_0000075
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'bridge' http://www.ebi.ac.uk/efo/swo/SWO_0000491
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BSgenome' http://www.ebi.ac.uk/efo/swo/SWO_0000059
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BufferedMatrix' http://www.ebi.ac.uk/efo/swo/SWO_0000077
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'BufferedMatrixMethods' http://www.ebi.ac.uk/efo/swo/SWO_0000078
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CALIB' http://www.ebi.ac.uk/efo/swo/SWO_0000079
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CAMERA' http://www.ebi.ac.uk/efo/swo/SWO_0000080
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'cellHTS' http://www.ebi.ac.uk/efo/swo/SWO_0000494
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'cellHTS2' http://www.ebi.ac.uk/efo/swo/SWO_0000495
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CGHbase' http://www.ebi.ac.uk/efo/swo/SWO_0000085
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CGHcall' http://www.ebi.ac.uk/efo/swo/SWO_0000086
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CGHregions' http://www.ebi.ac.uk/efo/swo/SWO_0000087
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'ChemmineR' http://www.ebi.ac.uk/efo/swo/SWO_0000099
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'clusterStab' http://www.ebi.ac.uk/efo/swo/SWO_0000499
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CMA' http://www.ebi.ac.uk/efo/swo/SWO_0000090
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CoCiteStats' http://www.ebi.ac.uk/efo/swo/SWO_0000120
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'codelink' http://www.ebi.ac.uk/efo/swo/SWO_0000501
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'CORREP' http://www.ebi.ac.uk/efo/swo/SWO_0000092
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'DEDS' http://www.ebi.ac.uk/efo/swo/SWO_0000125
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'DFP' http://www.ebi.ac.uk/efo/swo/SWO_0000126
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'diffGeneAnalysis' http://www.ebi.ac.uk/efo/swo/SWO_0000520
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'DNAcopy' http://www.ebi.ac.uk/efo/swo/SWO_0000130
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'domainsignatures' http://www.ebi.ac.uk/efo/swo/SWO_0000521
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'dualKS' http://www.ebi.ac.uk/efo/swo/SWO_0000522
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'DynDoc' http://www.ebi.ac.uk/efo/swo/SWO_0000132
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'EBarrays' http://www.ebi.ac.uk/efo/swo/SWO_0000134
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'EBImage' http://www.ebi.ac.uk/efo/swo/SWO_0000133
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'edgeR' http://www.ebi.ac.uk/efo/swo/SWO_0000527
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'explorase' http://www.ebi.ac.uk/efo/swo/SWO_0000529
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'externalVector' http://www.ebi.ac.uk/efo/swo/SWO_0000530
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'gaggle' http://www.ebi.ac.uk/efo/swo/SWO_0000545
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 'genArise' http://www.ebi.ac.uk/efo/swo/SWO_0000549
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > 50-50 MANOVA http://www.ebi.ac.uk/efo/swo/SWO_0000004
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ABarray http://www.ebi.ac.uk/efo/swo/SWO_0000005
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Acuity http://www.ebi.ac.uk/efo/swo/SWO_0000451
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Adobe Acrobat Reader http://www.ebi.ac.uk/swo/SWO_9000077
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Adobe Illustrator 10 http://www.ebi.ac.uk/swo/SWO_0000024
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affxparser http://www.ebi.ac.uk/efo/swo/SWO_0000452
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affy http://www.ebi.ac.uk/efo/swo/SWO_0000104
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affycomp http://www.ebi.ac.uk/efo/swo/SWO_0000105
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affyContam http://www.ebi.ac.uk/efo/swo/SWO_0000453
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affyImGUI http://www.ebi.ac.uk/efo/swo/SWO_0000454
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affyio http://www.ebi.ac.uk/efo/swo/SWO_0000460
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Affymetrix Expression Console http://www.ebi.ac.uk/efo/swo/SWO_0000008
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Affymetrix GeneChip Operating Software http://www.ebi.ac.uk/efo/swo/SWO_0000025
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Affymetrix Software http://www.ebi.ac.uk/efo/swo/SWO_0000026
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affyPara http://www.ebi.ac.uk/efo/swo/SWO_0000456
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affypdnn http://www.ebi.ac.uk/efo/swo/SWO_0000461
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affyQCReport http://www.ebi.ac.uk/efo/swo/SWO_0000457
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > affyTiling http://www.ebi.ac.uk/efo/swo/SWO_0000458
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Agi4x44PreProcess http://www.ebi.ac.uk/efo/swo/SWO_0000027
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Agilent Feature Extraction Software http://www.ebi.ac.uk/efo/swo/SWO_0000147
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Agilent Scan Control http://www.ebi.ac.uk/efo/swo/SWO_0000032
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Agilent Technologies Software http://www.ebi.ac.uk/efo/swo/SWO_0000034
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > AIDA http://www.ebi.ac.uk/efo/swo/SWO_0000009
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Algorithms for Calculating Microarray Enrichment http://www.ebi.ac.uk/efo/swo/SWO_0000007
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > altcdfenvs http://www.ebi.ac.uk/efo/swo/SWO_0000463
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > annaffy http://www.ebi.ac.uk/efo/swo/SWO_0000465
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Annotare http://www.ebi.ac.uk/swo/SWO_9000078
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Annotation-Driven Clustering http://www.ebi.ac.uk/efo/swo/SWO_0000109
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > annotationTools http://www.ebi.ac.uk/efo/swo/SWO_0000468
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Applied Biosystems 1700 Expression Array System Software http://www.ebi.ac.uk/efo/swo/SWO_0000037
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > aroma.light http://www.ebi.ac.uk/efo/swo/SWO_0000471
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Array Comparative Genomic Hybridization http://www.ebi.ac.uk/efo/swo/SWO_0000450
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ArrayExpress Bioconductor http://www.ebi.ac.uk/efo/swo/SWO_0000405
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ArrayGauge http://www.ebi.ac.uk/efo/swo/SWO_0000039
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > arrayMvout http://www.ebi.ac.uk/efo/swo/SWO_0000472
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ArrayNorm http://www.ebi.ac.uk/efo/swo/SWO_0000040
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > arrayQuality http://www.ebi.ac.uk/efo/swo/SWO_0000473
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > arrayQualityMetrics http://www.ebi.ac.uk/efo/swo/SWO_0000474
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ArrayVision http://www.ebi.ac.uk/efo/swo/SWO_0000042
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > arrayWoRx http://www.ebi.ac.uk/efo/swo/SWO_0000476
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > AtlasImage http://www.ebi.ac.uk/efo/swo/SWO_0000046
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BAC http://www.ebi.ac.uk/efo/swo/SWO_0000048
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BasReader 3.01 http://www.ebi.ac.uk/efo/swo/SWO_0000063
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Beadstudio http://www.ebi.ac.uk/efo/swo/SWO_0000065
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > bgafun http://www.ebi.ac.uk/efo/swo/SWO_0000482
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > bgx http://www.ebi.ac.uk/efo/swo/SWO_0000483
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BioConductor Software http://www.ebi.ac.uk/efo/swo/SWO_0000072
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > bioDist http://www.ebi.ac.uk/efo/swo/SWO_0000485
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BioJava http://www.ebi.ac.uk/swo/SWO_9000079
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > biomaRT http://www.ebi.ac.uk/efo/swo/SWO_0000489
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BioPerl http://www.ebi.ac.uk/swo/SWO_9000081
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BLAST http://www.ebi.ac.uk/efo/swo/SWO_0000054
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BlueFuse http://www.ebi.ac.uk/efo/swo/SWO_0000076
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BRB-ArrayTools http://www.ebi.ac.uk/efo/swo/SWO_0000058
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > BZScan http://www.ebi.ac.uk/efo/swo/SWO_0000060
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > CARMAweb http://www.ebi.ac.uk/efo/swo/SWO_0000096
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Category http://www.ebi.ac.uk/efo/swo/SWO_0000098
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > cghMCR http://www.ebi.ac.uk/efo/swo/SWO_0000496
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ChipReader 3.1 http://www.ebi.ac.uk/efo/swo/SWO_0000100
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ChipSkipper http://www.ebi.ac.uk/efo/swo/SWO_0000101
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Clustal http://www.ebi.ac.uk/swo/SWO_0000051
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > CodeLink Expression Analysis Software http://www.ebi.ac.uk/efo/swo/SWO_0000121
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > CodeLink Expression Scanning Software http://www.ebi.ac.uk/efo/swo/SWO_0000122
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > convert http://www.ebi.ac.uk/efo/swo/SWO_0000504
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > copa http://www.ebi.ac.uk/efo/swo/SWO_0000505
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > COPASI http://www.ebi.ac.uk/swo/SWO_0000013
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > cosmo http://www.ebi.ac.uk/efo/swo/SWO_0000506
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > cosmoGUI http://www.ebi.ac.uk/efo/swo/SWO_0000507
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > crlmm http://www.ebi.ac.uk/efo/swo/SWO_0000510
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ctc http://www.ebi.ac.uk/efo/swo/SWO_0000512
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Cyber-T http://www.ebi.ac.uk/efo/swo/SWO_0000124
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Cytoscape http://www.ebi.ac.uk/swo/SWO_0000079
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > daMA http://www.ebi.ac.uk/efo/swo/SWO_0000514
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > dChip http://www.ebi.ac.uk/efo/swo/SWO_0000513
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > DNDC http://www.ebi.ac.uk/swo/SWO_9000083
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > DROID http://www.ebi.ac.uk/swo/SWO_9000089
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Dropbox http://www.ebi.ac.uk/swo/SWO_9000090
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > dyebias http://www.ebi.ac.uk/efo/swo/SWO_0000523
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Eclipse http://www.ebi.ac.uk/swo/SWO_9000091
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ecolitk http://www.ebi.ac.uk/efo/swo/SWO_0000525
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > edd http://www.ebi.ac.uk/efo/swo/SWO_0000526
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > EMBOSS package http://www.ebi.ac.uk/swo/SWO_9000092
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Endnote http://www.ebi.ac.uk/swo/SWO_9000093
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Ensembl http://www.ebi.ac.uk/swo/SWO_0000050
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Entrez http://www.ebi.ac.uk/swo/SWO_0000138
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > exonmap http://www.ebi.ac.uk/efo/swo/SWO_0000528
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Expert 2100 http://www.ebi.ac.uk/efo/swo/SWO_0000138
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > factDesign http://www.ebi.ac.uk/efo/swo/SWO_0000532
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > fbat http://www.ebi.ac.uk/efo/swo/SWO_0000533
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > fdrame http://www.ebi.ac.uk/efo/swo/SWO_0000534
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flagme http://www.ebi.ac.uk/efo/swo/SWO_0000536
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flowClust http://www.ebi.ac.uk/efo/swo/SWO_0000537
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flowCore http://www.ebi.ac.uk/efo/swo/SWO_0000538
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flowFlowJo http://www.ebi.ac.uk/efo/swo/SWO_0000539
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flowQ http://www.ebi.ac.uk/efo/swo/SWO_0000540
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flowStats http://www.ebi.ac.uk/efo/swo/SWO_0000541
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flowUtils http://www.ebi.ac.uk/efo/swo/SWO_0000542
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > flowViz http://www.ebi.ac.uk/efo/swo/SWO_0000543
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GACK http://www.ebi.ac.uk/efo/swo/SWO_0000152
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > gaga http://www.ebi.ac.uk/efo/swo/SWO_0000544
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GC-RMA Quantification http://www.ebi.ac.uk/efo/swo/SWO_0000154
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > gcrma http://www.ebi.ac.uk/efo/swo/SWO_0000547
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > gcRMA quantification http://www.ebi.ac.uk/efo/swo/SWO_0000546
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GEMTools 2.4 http://www.ebi.ac.uk/efo/swo/SWO_0000155
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Gene Expression Atlas at EBI R statistics package http://www.ebi.ac.uk/swo/SWO_0000090
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Gene Pix http://www.ebi.ac.uk/efo/swo/SWO_0000176
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > gene2pathway http://www.ebi.ac.uk/efo/swo/SWO_0000550
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneData Expressionist Analyst v4.0.5 http://www.ebi.ac.uk/efo/swo/SWO_0000175
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > genefilter http://www.ebi.ac.uk/efo/swo/SWO_0000555
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > genemeta http://www.ebi.ac.uk/efo/swo/SWO_0000556
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > geneplotter http://www.ebi.ac.uk/efo/swo/SWO_0000557
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneR http://www.ebi.ac.uk/efo/swo/SWO_0000188
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > geneRecommender http://www.ebi.ac.uk/efo/swo/SWO_0000551
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneRegionScan http://www.ebi.ac.uk/efo/swo/SWO_0000189
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneRfold http://www.ebi.ac.uk/efo/swo/SWO_0000190
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneSelectMMD http://www.ebi.ac.uk/efo/swo/SWO_0000191
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneSelector http://www.ebi.ac.uk/efo/swo/SWO_0000192
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneSpring http://www.ebi.ac.uk/efo/swo/SWO_0000193
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneTac Analyser http://www.ebi.ac.uk/efo/swo/SWO_0000195
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneticsBase http://www.ebi.ac.uk/efo/swo/SWO_0000201
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneticsDesign http://www.ebi.ac.uk/efo/swo/SWO_0000202
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneticsPed http://www.ebi.ac.uk/efo/swo/SWO_0000203
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GeneTraffic http://www.ebi.ac.uk/efo/swo/SWO_0000196
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GenomeGraphs http://www.ebi.ac.uk/efo/swo/SWO_0000205
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > genomeIntervals http://www.ebi.ac.uk/efo/swo/SWO_0000558
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GEOmetadb http://www.ebi.ac.uk/efo/swo/SWO_0000158
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GEOquery http://www.ebi.ac.uk/efo/swo/SWO_0000159
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GGBase http://www.ebi.ac.uk/efo/swo/SWO_0000161
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GGtools http://www.ebi.ac.uk/efo/swo/SWO_0000163
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GLAD http://www.ebi.ac.uk/efo/swo/SWO_0000164
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GLEAMS software http://www.ebi.ac.uk/efo/swo/SWO_0000166
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GlobalAncova http://www.ebi.ac.uk/efo/swo/SWO_0000206
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > globaltest http://www.ebi.ac.uk/efo/swo/SWO_0000561
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GMS http://www.ebi.ac.uk/efo/swo/SWO_0000167
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > goProfiles http://www.ebi.ac.uk/efo/swo/SWO_0000563
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GOSemSim http://www.ebi.ac.uk/efo/swo/SWO_0000207
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GOstats http://www.ebi.ac.uk/efo/swo/SWO_0000168
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > goTools http://www.ebi.ac.uk/efo/swo/SWO_0000564
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > gpls http://www.ebi.ac.uk/efo/swo/SWO_0000565
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > graph http://www.ebi.ac.uk/efo/swo/SWO_0000567
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GraphAlignment http://www.ebi.ac.uk/efo/swo/SWO_0000209
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GraphAT http://www.ebi.ac.uk/efo/swo/SWO_0000208
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GridGrinder http://www.ebi.ac.uk/efo/swo/SWO_0000210
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GSEABase http://www.ebi.ac.uk/efo/swo/SWO_0000170
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > GSEAlm http://www.ebi.ac.uk/efo/swo/SWO_0000171
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Harshlight http://www.ebi.ac.uk/efo/swo/SWO_0000222
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Heatplus http://www.ebi.ac.uk/efo/swo/SWO_0000224
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > HELP http://www.ebi.ac.uk/efo/swo/SWO_0000213
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > HEM http://www.ebi.ac.uk/efo/swo/SWO_0000214
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > hexbin http://www.ebi.ac.uk/efo/swo/SWO_0000572
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > HilbertVis http://www.ebi.ac.uk/efo/swo/SWO_0000225
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > HilbertVisGUI http://www.ebi.ac.uk/efo/swo/SWO_0000226
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > hopach http://www.ebi.ac.uk/efo/swo/SWO_0000574
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > hypergraph http://www.ebi.ac.uk/efo/swo/SWO_0000577
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Icens http://www.ebi.ac.uk/efo/swo/SWO_0000578
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ICS-501 (version 2.3) Image Capture System http://www.ebi.ac.uk/efo/swo/SWO_0000228
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > idiogram http://www.ebi.ac.uk/efo/swo/SWO_0000579
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ImaGene http://www.ebi.ac.uk/efo/swo/SWO_0000238
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ImageQuant http://www.ebi.ac.uk/efo/swo/SWO_0000236
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ImageReader http://www.ebi.ac.uk/efo/swo/SWO_0000237
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > impute http://www.ebi.ac.uk/efo/swo/SWO_0000581
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Initial microarray data processing (data filtering, local normalisation and quality control) http://www.ebi.ac.uk/efo/swo/SWO_0000241
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > IntelliJ IDEA http://www.ebi.ac.uk/swo/SWO_0000011
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > IRanges http://www.ebi.ac.uk/efo/swo/SWO_0000230
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ITALICS http://www.ebi.ac.uk/efo/swo/SWO_0000231
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > iterativeBMA http://www.ebi.ac.uk/efo/swo/SWO_0000582
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > iterativeBMAsurv http://www.ebi.ac.uk/efo/swo/SWO_0000583
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Jaguar http://www.ebi.ac.uk/efo/swo/SWO_0000245
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Kakadu http://www.ebi.ac.uk/swo/SWO_0000009
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > KCsmart http://www.ebi.ac.uk/efo/swo/SWO_0000246
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > KEGGgraph http://www.ebi.ac.uk/efo/swo/SWO_0000248
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > keggorth http://www.ebi.ac.uk/efo/swo/SWO_0000590
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > KEGGSOAP http://www.ebi.ac.uk/efo/swo/SWO_0000247
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > lapmix http://www.ebi.ac.uk/efo/swo/SWO_0000591
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > LBE http://www.ebi.ac.uk/efo/swo/SWO_0000252
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > limma http://www.ebi.ac.uk/efo/swo/SWO_0000593
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > limmaGUI http://www.ebi.ac.uk/efo/swo/SWO_0000594
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Linux http://www.ebi.ac.uk/swo/SWO_0000022
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > LMGene http://www.ebi.ac.uk/efo/swo/SWO_0000254
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > logicFS http://www.ebi.ac.uk/efo/swo/SWO_0000599
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > logitT http://www.ebi.ac.uk/efo/swo/SWO_0000601
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > LPE http://www.ebi.ac.uk/efo/swo/SWO_0000258
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > LPEadj http://www.ebi.ac.uk/efo/swo/SWO_0000259
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > lumi http://www.ebi.ac.uk/efo/swo/SWO_0000603
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > maanova http://www.ebi.ac.uk/efo/swo/SWO_0000607
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MAANOVA v1.2 package for MATLAB http://www.ebi.ac.uk/efo/swo/SWO_0000266
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > macat http://www.ebi.ac.uk/efo/swo/SWO_0000608
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > maCorrPlot http://www.ebi.ac.uk/efo/swo/SWO_0000604
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > maDB http://www.ebi.ac.uk/efo/swo/SWO_0000605
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > made4 http://www.ebi.ac.uk/efo/swo/SWO_0000609
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MAGE-TAB inputting software http://www.ebi.ac.uk/efo/swo/SWO_0000115
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > maigesPack http://www.ebi.ac.uk/efo/swo/SWO_0000610
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > makecdfenv http://www.ebi.ac.uk/efo/swo/SWO_0000612
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > makePlatformDesign http://www.ebi.ac.uk/efo/swo/SWO_0000611
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MANOR http://www.ebi.ac.uk/efo/swo/SWO_0000269
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MantelCorr http://www.ebi.ac.uk/efo/swo/SWO_0000288
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > marray http://www.ebi.ac.uk/efo/swo/SWO_0000613
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > maSigPro http://www.ebi.ac.uk/efo/swo/SWO_0000606
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MassSpecWavelet http://www.ebi.ac.uk/efo/swo/SWO_0000289
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > matchprobes http://www.ebi.ac.uk/efo/swo/SWO_0000616
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MATLAB http://www.ebi.ac.uk/swo/SWO_0000005
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > matlab software http://www.ebi.ac.uk/efo/swo/Class_6
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MAVI Pro http://www.ebi.ac.uk/efo/swo/SWO_0000275
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MCRestimate http://www.ebi.ac.uk/efo/swo/SWO_0000279
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > mdqc http://www.ebi.ac.uk/efo/swo/SWO_0000617
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MeasurementError.cor http://www.ebi.ac.uk/efo/swo/SWO_0000292
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MEDME http://www.ebi.ac.uk/efo/swo/SWO_0000280
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MergeMaid http://www.ebi.ac.uk/efo/swo/SWO_0000293
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > metaArray http://www.ebi.ac.uk/efo/swo/SWO_0000619
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > metahdep http://www.ebi.ac.uk/efo/swo/SWO_0000621
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Mfuzz http://www.ebi.ac.uk/efo/swo/SWO_0000294
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MIcroarray Analysis Suite http://www.ebi.ac.uk/efo/swo/SWO_0000271
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > microRNA http://www.ebi.ac.uk/efo/swo/SWO_0000623
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Microsoft developed software http://www.ebi.ac.uk/swo/SWO_0000029
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Microsoft Excel http://www.ebi.ac.uk/swo/SWO_9000070
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Microsoft Office 2001 http://www.ebi.ac.uk/swo/SWO_9000075
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Microsoft Windows http://www.ebi.ac.uk/swo/SWO_9000072
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Microsoft Word http://www.ebi.ac.uk/swo/SWO_0000025
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > minet http://www.ebi.ac.uk/efo/swo/SWO_0000625
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MiPP http://www.ebi.ac.uk/efo/swo/SWO_0000295
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > miRNApath http://www.ebi.ac.uk/efo/swo/SWO_0000622
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MLInterfaces http://www.ebi.ac.uk/efo/swo/SWO_0000283
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > multiscan http://www.ebi.ac.uk/efo/swo/SWO_0000103
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > multtest http://www.ebi.ac.uk/efo/swo/SWO_0000630
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MUSCLE http://www.ebi.ac.uk/swo/SWO_0000060
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > MVCClass http://www.ebi.ac.uk/efo/swo/SWO_0000285
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > nem http://www.ebi.ac.uk/efo/swo/SWO_0000632
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > nnNorm http://www.ebi.ac.uk/efo/swo/SWO_0000635
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > NONMEM http://www.ebi.ac.uk/swo/SWO_0000137
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > nudge http://www.ebi.ac.uk/efo/swo/SWO_0000636
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > OBO-Edit http://www.ebi.ac.uk/swo/SWO_0000027
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > occugene http://www.ebi.ac.uk/efo/swo/SWO_0000637
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > OCplus http://www.ebi.ac.uk/efo/swo/SWO_0000307
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > oligo http://www.ebi.ac.uk/efo/swo/SWO_0000638
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > oligoClasses http://www.ebi.ac.uk/efo/swo/SWO_0000639
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > OLIN http://www.ebi.ac.uk/efo/swo/SWO_0000308
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > OLINgui http://www.ebi.ac.uk/efo/swo/SWO_0000309
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > OmniOutliner http://www.ebi.ac.uk/swo/SWO_0000007
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > oneChannelGUI http://www.ebi.ac.uk/efo/swo/SWO_0000641
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ontology engineering software http://www.ebi.ac.uk/swo/SWO_0000028
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ontoTools http://www.ebi.ac.uk/efo/swo/SWO_0000642
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > operating system http://www.ebi.ac.uk/swo/SWO_0000021
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Optiquant http://www.ebi.ac.uk/efo/swo/SWO_0000310
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > OrderedList http://www.ebi.ac.uk/efo/swo/SWO_0000311
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > OutlierD http://www.ebi.ac.uk/efo/swo/SWO_0000312
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pamr http://www.ebi.ac.uk/efo/swo/SWO_0000645
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > PAnnBuilder http://www.ebi.ac.uk/efo/swo/SWO_0000314
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > panp http://www.ebi.ac.uk/efo/swo/SWO_0000646
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > parody http://www.ebi.ac.uk/efo/swo/SWO_0000647
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pathRender http://www.ebi.ac.uk/efo/swo/SWO_0000649
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Pathways 2.01 software http://www.ebi.ac.uk/efo/swo/SWO_0000324
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pcaMethods http://www.ebi.ac.uk/efo/swo/SWO_0000650
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pcot2 http://www.ebi.ac.uk/efo/swo/SWO_0000651
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > PCpheno http://www.ebi.ac.uk/efo/swo/SWO_0000316
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pdInfoBuilder http://www.ebi.ac.uk/efo/swo/SWO_0000653
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pdmclass http://www.ebi.ac.uk/efo/swo/SWO_0000654
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > PGSEA http://www.ebi.ac.uk/efo/swo/SWO_0000317
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pgUtils http://www.ebi.ac.uk/efo/swo/SWO_0000656
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pickgene http://www.ebi.ac.uk/efo/swo/SWO_0000657
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > pkgDepTools http://www.ebi.ac.uk/efo/swo/SWO_0000658
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > plgem http://www.ebi.ac.uk/efo/swo/SWO_0000659
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > plier http://www.ebi.ac.uk/efo/swo/SWO_0000660
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > PLPE http://www.ebi.ac.uk/efo/swo/SWO_0000319
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > plw http://www.ebi.ac.uk/efo/swo/SWO_0000662
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > PostgreSQL http://www.ebi.ac.uk/swo/SWO_0000142
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ppiStats http://www.ebi.ac.uk/efo/swo/SWO_0000665
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > prada http://www.ebi.ac.uk/efo/swo/SWO_0000666
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > preprocessCore http://www.ebi.ac.uk/efo/swo/SWO_0000667
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > PROcess http://www.ebi.ac.uk/efo/swo/SWO_0000322
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Protege 4 http://www.ebi.ac.uk/swo/SWO_0000006
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > PSI-BLAST http://www.ebi.ac.uk/swo/SWO_0000135
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > puma http://www.ebi.ac.uk/efo/swo/SWO_0000669
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Q http://www.ebi.ac.uk/swo/SWO_0000073
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > qpcrNorm http://www.ebi.ac.uk/efo/swo/SWO_0000671
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > qpgraph http://www.ebi.ac.uk/efo/swo/SWO_0000672
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > QuantArray scanner software http://www.ebi.ac.uk/efo/swo/SWO_0000329
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > quantsmooth http://www.ebi.ac.uk/efo/swo/SWO_0000675
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > qvalue http://www.ebi.ac.uk/efo/swo/SWO_0000676
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > R software http://www.ebi.ac.uk/efo/swo/SWO_0000111
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > rama http://www.ebi.ac.uk/efo/swo/SWO_0000679
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RankProd http://www.ebi.ac.uk/efo/swo/SWO_0000350
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RbcBook1 http://www.ebi.ac.uk/efo/swo/SWO_0000352
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RBGL http://www.ebi.ac.uk/efo/swo/SWO_0000333
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RBioinf http://www.ebi.ac.uk/efo/swo/SWO_0000335
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > rbsurv http://www.ebi.ac.uk/efo/swo/SWO_0000683
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rdbi http://www.ebi.ac.uk/efo/swo/SWO_0000353
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RdbiPgSQL http://www.ebi.ac.uk/efo/swo/SWO_0000354
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rdisop http://www.ebi.ac.uk/efo/swo/SWO_0000355
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > reb http://www.ebi.ac.uk/efo/swo/SWO_0000685
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RefPlus http://www.ebi.ac.uk/efo/swo/SWO_0000356
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Resourcerer http://www.ebi.ac.uk/efo/swo/SWO_0000358
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > rflowcyt http://www.ebi.ac.uk/efo/swo/SWO_0000686
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rgraphviz http://www.ebi.ac.uk/efo/swo/SWO_0000359
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > rHVDM http://www.ebi.ac.uk/efo/swo/SWO_0000677
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Ringo http://www.ebi.ac.uk/efo/swo/SWO_0000360
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rintact http://www.ebi.ac.uk/efo/swo/SWO_0000361
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RLMM http://www.ebi.ac.uk/efo/swo/SWO_0000338
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RMAExpress http://www.ebi.ac.uk/efo/swo/SWO_0000343
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RMAGEML http://www.ebi.ac.uk/efo/swo/SWO_0000346
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rmagpie http://www.ebi.ac.uk/efo/swo/SWO_0000362
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > rMAT http://www.ebi.ac.uk/efo/swo/SWO_0000678
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RNAither http://www.ebi.ac.uk/efo/swo/SWO_0000347
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ROC http://www.ebi.ac.uk/efo/swo/SWO_0000348
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rosetta Resolver http://www.ebi.ac.uk/efo/swo/SWO_0000365
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RpsiXML http://www.ebi.ac.uk/efo/swo/SWO_0000367
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rredland http://www.ebi.ac.uk/efo/swo/SWO_0000368
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > rsbml http://www.ebi.ac.uk/efo/swo/SWO_0000688
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > rtracklayer http://www.ebi.ac.uk/efo/swo/SWO_0000689
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Rtreemix http://www.ebi.ac.uk/efo/swo/SWO_0000369
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Ruuid http://www.ebi.ac.uk/efo/swo/SWO_0000370
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > RWebServices http://www.ebi.ac.uk/efo/swo/SWO_0000349
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > safe http://www.ebi.ac.uk/efo/swo/SWO_0000690
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > sagenhaft http://www.ebi.ac.uk/efo/swo/SWO_0000691
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SAGx http://www.ebi.ac.uk/efo/swo/SWO_0000373
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SAS/STAT Software, Version 8 http://www.ebi.ac.uk/efo/swo/SWO_0000375
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SBMLR http://www.ebi.ac.uk/efo/swo/SWO_0000377
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ScanAlyze http://www.ebi.ac.uk/efo/swo/SWO_0000417
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ScanArray http://www.ebi.ac.uk/efo/swo/SWO_0000418
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > scanning software http://www.ebi.ac.uk/efo/swo/SWO_0000420
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ScISI http://www.ebi.ac.uk/efo/swo/SWO_0000416
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > search engine http://www.ebi.ac.uk/swo/SWO_0000140
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Segway 1.2 http://www.ebi.ac.uk/swo/SWO_0000145
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > seqLogo http://www.ebi.ac.uk/efo/swo/SWO_0000692
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Sequence Alignment and Modeling System http://www.ebi.ac.uk/swo/SWO_0000077
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ShortRead http://www.ebi.ac.uk/efo/swo/SWO_0000422
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > siggenes http://www.ebi.ac.uk/efo/swo/SWO_0000694
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > sigPathway http://www.ebi.ac.uk/efo/swo/SWO_0000693
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Silicon Genetics Genespring http://www.ebi.ac.uk/efo/swo/SWO_0000424
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SIM http://www.ebi.ac.uk/efo/swo/SWO_0000382
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > simpleaffy http://www.ebi.ac.uk/efo/swo/SWO_0000696
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > simulatorAPMS http://www.ebi.ac.uk/efo/swo/SWO_0000697
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > sizepower http://www.ebi.ac.uk/efo/swo/SWO_0000698
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SLGI http://www.ebi.ac.uk/efo/swo/SWO_0000383
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SLqPCR http://www.ebi.ac.uk/efo/swo/SWO_0000384
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SMAP http://www.ebi.ac.uk/efo/swo/SWO_0000385
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Smultron http://www.ebi.ac.uk/swo/SWO_0000031
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > snapCGH http://www.ebi.ac.uk/efo/swo/SWO_0000700
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SNPchip http://www.ebi.ac.uk/efo/swo/SWO_0000387
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > snpMatrix http://www.ebi.ac.uk/efo/swo/SWO_0000701
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > software before Microsoft 2007 http://www.ebi.ac.uk/swo/software_before_Microsoft_2007
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > software suite http://www.ebi.ac.uk/swo/SWO_9000076
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > software with command line interface http://www.ebi.ac.uk/swo/SWO_0000030
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > software with image input http://www.ebi.ac.uk/swo/SWO_0000026
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SPIA http://www.ebi.ac.uk/efo/swo/SWO_0000388
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > spikeLI http://www.ebi.ac.uk/efo/swo/SWO_0000703
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > spkTools http://www.ebi.ac.uk/efo/swo/SWO_0000704
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > splicegear http://www.ebi.ac.uk/efo/swo/SWO_0000705
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > splots http://www.ebi.ac.uk/efo/swo/SWO_0000706
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Spot quantification http://www.ebi.ac.uk/efo/swo/SWO_0000428
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Spotfinder [TIGR] http://www.ebi.ac.uk/efo/swo/SWO_0000429
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Spotfire http://www.ebi.ac.uk/efo/swo/SWO_0000430
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > spotSegmentation http://www.ebi.ac.uk/efo/swo/SWO_0000707
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SPSS http://www.ebi.ac.uk/swo/SWO_0000075
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > sscore http://www.ebi.ac.uk/efo/swo/SWO_0000710
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > ssize http://www.ebi.ac.uk/efo/swo/SWO_0000711
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > SSPA http://www.ebi.ac.uk/efo/swo/SWO_0000390
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > stam http://www.ebi.ac.uk/efo/swo/SWO_0000712
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > STARLIMS http://www.ebi.ac.uk/swo/SWO_0000019
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > stepNorm http://www.ebi.ac.uk/efo/swo/SWO_0000714
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > TargetSearch http://www.ebi.ac.uk/efo/swo/SWO_0000435
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > TAS Software http://www.ebi.ac.uk/efo/swo/SWO_0000432
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > TCoffee http://www.ebi.ac.uk/swo/SWO_0000064
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > tilingArray http://www.ebi.ac.uk/efo/swo/SWO_0000716
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > timecourse http://www.ebi.ac.uk/efo/swo/SWO_0000717
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > tkWidgets http://www.ebi.ac.uk/efo/swo/SWO_0000718
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > topGO http://www.ebi.ac.uk/efo/swo/SWO_0000719
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > tspair http://www.ebi.ac.uk/efo/swo/SWO_0000720
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > twilight http://www.ebi.ac.uk/efo/swo/SWO_0000721
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > TypeInfo http://www.ebi.ac.uk/efo/swo/SWO_0000438
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Unix http://www.ebi.ac.uk/swo/SWO_0000020
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > VanillaICE http://www.ebi.ac.uk/efo/swo/SWO_0000442
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > vbmp http://www.ebi.ac.uk/efo/swo/SWO_0000723
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > version name http://purl.obolibrary.org/obo/IAO_0000129
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > vsn http://www.ebi.ac.uk/efo/swo/SWO_0000725
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > weaver http://www.ebi.ac.uk/efo/swo/SWO_0000726
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > webbioc http://www.ebi.ac.uk/efo/swo/SWO_0000727
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > Weka http://www.ebi.ac.uk/swo/SWO_0000141
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > widgetTools http://www.ebi.ac.uk/efo/swo/SWO_0000728
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > WordStar http://www.ebi.ac.uk/swo/SWO_0000010
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > xcms http://www.ebi.ac.uk/efo/swo/SWO_0000729
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > XDE http://www.ebi.ac.uk/efo/swo/SWO_0000446
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > XDotsReader http://www.ebi.ac.uk/efo/swo/SWO_0000447
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > xmapbridge http://www.ebi.ac.uk/efo/swo/SWO_0000699
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > xps http://www.ebi.ac.uk/efo/swo/SWO_0000730
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > software http://www.ebi.ac.uk/swo/SWO_0000001 > yaqcaffy http://www.ebi.ac.uk/efo/swo/SWO_0000731
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > web service http://www.ebi.ac.uk/swo/interface/SWO_9000051 > JSON web service http://www.ebi.ac.uk/swo/interface/SWO_5000006
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > web service http://www.ebi.ac.uk/swo/interface/SWO_9000051 > MG-RAST Server http://press.igsb.anl.gov/mg-rast/
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > web service http://www.ebi.ac.uk/swo/interface/SWO_9000051 > REST service http://www.ebi.ac.uk/swo/interface/SWO_5000005
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > web service http://www.ebi.ac.uk/swo/interface/SWO_9000051 > SOAP service http://www.ebi.ac.uk/swo/interface/SWO_5000004
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > web service http://www.ebi.ac.uk/swo/interface/SWO_9000051 > UNAVCO http://gcmdservices.gsfc.nasa.gov/kms/concept/ced91666-b9a6-4197-bf47-7968ea0ed271
+Resource http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#resource > web service http://www.ebi.ac.uk/swo/interface/SWO_9000051 > Web Service Resource http://semanticscience.org/resource/SIO_000140
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Agricultural Science http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Agricultural_Science > Agricultural Acquatic Science http://gcmdservices.gsfc.nasa.gov/kms/concept/ca227ff0-4742-4e51-a763-4582fa28291c
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Agricultural Science http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Agricultural_Science > Agricultural Plant Science http://gcmdservices.gsfc.nasa.gov/kms/concept/25be3b9a-9d4c-4b5b-8d24-b1f519913d90
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Atmospheric Sciences http://www.vocabularyserver.com/usgs/index.php?tema=106&/atmospheric-sciences > Meteorology http://www.vocabularyserver.com/usgs/index.php?tema=1031&/meteorology
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Biochemistry http://edamontology.org/topic_3292
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Bioinformatics http://edamontology.org/topic_0091
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Biomarkers http://edamontology.org/topic_3360
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Biomedical science http://edamontology.org/topic_3344
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Biophysics http://edamontology.org/topic_3306
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Biotechnology http://edamontology.org/topic_3297
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Cell biology http://edamontology.org/topic_2229
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Chemical biology http://edamontology.org/topic_3369
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Computational biology http://edamontology.org/topic_3307
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Developmental biology http://edamontology.org/topic_3064
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Ecology http://edamontology.org/topic_0610
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Evolutionary biology http://edamontology.org/topic_3299
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Genetics http://edamontology.org/topic_3053
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Marine biology http://edamontology.org/topic_3387
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Molecular biology http://edamontology.org/topic_3047
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Molecular interactions, pathways and networks http://edamontology.org/topic_0602
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Omics http://edamontology.org/topic_3391
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Organisms http://edamontology.org/topic_0621
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Structural biology http://edamontology.org/topic_1317
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Biology http://edamontology.org/topic_3070 > Systems biology http://edamontology.org/topic_2259
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Chemistry http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Chemistry > Geochemistry http://www.vocabularyserver.com/usgs/index.php?tema=639&/geochemistry
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Chemistry http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Chemistry > Geochemistry http://www.vocabularyserver.com/usgs/index.php?tema=639&/geochemistry
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Chemistry http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Chemistry > Photochemistry http://sweet.jpl.nasa.gov/2.3/humanKnowledgeDomain.owl#Photochemistry
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Climate Science http://www.vocabularyserver.com/usgs/index.php?tema=276&/climatology > Climate Change http://www.vocabularyserver.com/usgs/index.php?tema=272&/climate-change
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Climate Science http://www.vocabularyserver.com/usgs/index.php?tema=276&/climatology > Climate http://sweet.jpl.nasa.gov/2.3/phenPlanetClimate.owl#Climate
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Bioinformatics http://edamontology.org/topic_0091
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Cheminformatics http://edamontology.org/topic_2258
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Computational biology http://edamontology.org/topic_3307
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Computational chemistry http://edamontology.org/topic_3332
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Computer programming http://edamontology.org/topic_3372
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Data mining http://edamontology.org/topic_3473
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Machine learning http://edamontology.org/topic_3474
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Computer science http://edamontology.org/topic_3316 > Medical informatics http://edamontology.org/topic_3063
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Geochemistry http://www.vocabularyserver.com/usgs/index.php?tema=639&/geochemistry
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Geography http://www.vocabularyserver.com/usgs/index.php?tema=649&/geography
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Geology http://www.vocabularyserver.com/usgs/index.php?tema=666&/geology
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Geophysics http://www.vocabularyserver.com/usgs/index.php?tema=673&/geophysics
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Glaciology http://www.vocabularyserver.com/usgs/index.php?tema=688&/glaciology
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Hydrology http://www.vocabularyserver.com/usgs/index.php?tema=797&/hydrology
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Limnology http://www.vocabularyserver.com/usgs/index.php?tema=935&/limnology
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Ocean Sciences http://www.vocabularyserver.com/usgs/index.php?tema=1152&/ocean-sciences
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Paleontology http://www.vocabularyserver.com/usgs/index.php?tema=1217&/paleontology
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Earth Science https://en.wikipedia.org/wiki/Branches_of_science#Earth_science > Soil Sciences http://www.vocabularyserver.com/usgs/index.php?tema=1556&/soil-sciences
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Ecology http://www.vocabularyserver.com/usgs/index.php?tema=464&/ecology > Biodiversity http://www.vocabularyserver.com/usgs/index.php?tema=155
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Ecology http://www.vocabularyserver.com/usgs/index.php?tema=464&/ecology > Metagenomics http://purl.bioontology.org/ontology/MESH/D056186
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Ecology http://www.vocabularyserver.com/usgs/index.php?tema=464&/ecology > population and community ecology http://www.vocabularyserver.com/usgs/index.php?tema=1304&/population-and-community-ecology
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Allergy, clinical immunology and immunotherapeutics. http://edamontology.org/topic_3400
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Anaesthesiology http://edamontology.org/topic_3402
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Biomedical science http://edamontology.org/topic_3344
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Cardiology http://edamontology.org/topic_3335
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Complementary medicine http://edamontology.org/topic_3423
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Critical care medicine http://edamontology.org/topic_3403
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Dentistry http://edamontology.org/topic_3405
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Dermatology http://edamontology.org/topic_3404
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Ear, nose and throat medicine http://edamontology.org/topic_3406
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Endocrinology and metabolism http://edamontology.org/topic_3407
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Gastroenterology http://edamontology.org/topic_3409
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Gender medicine http://edamontology.org/topic_3410
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Geriatric medicine http://edamontology.org/topic_3399
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Gynaecology and obstetrics http://edamontology.org/topic_3411
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Haematology http://edamontology.org/topic_3408
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Hepatic and biliary medicine http://edamontology.org/topic_3412
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Medical informatics http://edamontology.org/topic_3063
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Medical toxicology http://edamontology.org/topic_3415
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Musculoskeletal medicine http://edamontology.org/topic_3416
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Neurology http://edamontology.org/topic_3334
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Oncology http://edamontology.org/topic_2640
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Opthalmology http://edamontology.org/topic_3417
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Paediatrics http://edamontology.org/topic_3418
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Pain medicine http://edamontology.org/topic_3401
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Pathology http://edamontology.org/topic_0634
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Physiology http://edamontology.org/topic_3300
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Psychiatry http://edamontology.org/topic_3419
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Public health and epidemiology http://edamontology.org/topic_3305
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Reproductive health http://edamontology.org/topic_3420
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Respiratory medicine http://edamontology.org/topic_3322
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Surgery http://edamontology.org/topic_3421
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Systems medicine http://edamontology.org/topic_3396
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Toxicology http://edamontology.org/topic_2840
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Translational medicine http://edamontology.org/topic_3342
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Trauma medicine http://edamontology.org/topic_3414
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Urology and nephrology http://edamontology.org/topic_3422
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Medicine http://edamontology.org/topic_3303 > Veterinary medicine http://edamontology.org/topic_3397
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Physics http://edamontology.org/topic_3318 > Biophysics http://edamontology.org/topic_3306
+Science Domain http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences > Science Domain (Other) http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#scienceDomainUnclassified > Food Science http://gcmdservices.gsfc.nasa.gov/kms/concept/b98f3a77-397d-41d7-9507-e7a3e47210b1

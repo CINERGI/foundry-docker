@@ -1,4 +1,4 @@
-pluginDir: "/var/data/foundry/foundry_plugins/plugins"
+pluginDir: "/data/foundry/foundry_plugins/plugins"
 database:
   host: mongodb
   port: 27017
@@ -32,7 +32,7 @@ consumers:
     class: org.neuinfo.foundry.consumers.jms.consumers.plugins.KeywordEnhancer2
     status: keyword_enhanced
     serviceURL: "http://ec-scigraph.sdsc.edu:9000"
-    stopwordsUrl: "file:///var/data/cinergi/stopwords.txt"
+    stopwordsUrl: "file:///data/cinergi/stopwords.txt"
     useNER: false
 - org:
     class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.OrganizationEnhancer2"

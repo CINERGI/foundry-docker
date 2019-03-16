@@ -1,13 +1,13 @@
-pluginDir: "/var/data/foundry/foundry_plugins/plugins"
+pluginDir: "/data/foundry/foundry_plugins/plugins"
 database:
-    host: 10.128.10.230
+    host: mongodb
     port: 27017
-    user: root
+    user: pipeline
     pwd: "example"
-    db: discotest
+    db: cinergi
     collection: records
 mq:
-    brokerURL: "tcp://localhost:61616?wireFormat.maxInactivityDuration=0"
+    brokerURL: "tcp://servicebus:61616?wireFormat.maxInactivityDuration=0"
 
 workflow:
     "Cinergi Workflow":

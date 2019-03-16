@@ -1,0 +1,87 @@
+#label,cinergiPreferredLabel
+atmosphere,Atmosphere               
+Chemical Entity,Chemical                 
+chemical process,Chemical Process         
+chemical substance,Chemical Substance       
+Computer science,Computer Science         
+document,Document                 
+elemental aluminium,Aluminium                
+elemental antimony,Antimony                 
+elemental argon,Argon                    
+elemental arsenic,Arsenic                  
+elemental astatine,Astatine                 
+elemental barium,Barium                   
+elemental beryllium,Beryllium                
+elemental boron,Boron                    
+elemental bromine,Bromine                  
+elemental cadmium,Cadmium                  
+elemental calcium,Calcium                  
+elemental carbon,Carbon                   
+elemental cerium,Cerium                   
+elemental chlorine,Chlorine                 
+elemental copper,Copper                   
+elemental europium,Europium                 
+elemental fluorine,Fluorine                 
+elemental gadolinium,Gadolinium               
+elemental germanium,Germanium                
+elemental gold,Gold                     
+elemental halogen,Halogen                  
+elemental helium,Helium                   
+elemental hydrogen,Hydrogen                 
+elemental indium,Indium                   
+elemental iodine,Iodine                   
+elemental iron,Iron                     
+elemental krypton,Krypton                  
+elemental lead,Lead                     
+elemental magnesium,Magnesium                
+elemental manganese,Manganese                
+elemental mercury,Mercury                  
+elemental molybdenum,Molybdenum               
+elemental neon,Neon                     
+elemental palladium,Palladium                
+elemental platinum,Platinum                 
+elemental pnictogen,Pnictogen                
+elemental potassium,Potassium                
+elemental selenium,Selenium                 
+elemental silicon,Silicon                  
+elemental silver,Silver                   
+elemental strontium,Strontium                
+elemental sulfur,Sulfur                   
+elemental tellurium,Tellurium                
+elemental thallium,Thallium                 
+elemental tin,Tin                      
+elemental uranium,Uranium                  
+elemental vanadium,Vanadium                 
+elemental xenon,Xenon                    
+elemental zinc,Zinc                     
+geographic location,Geographic Location      
+Geothermal,Geothermal Feature       
+glacial process,Glacial Process          
+habitat,Habitat                  
+Human Activities,Activity                 
+Human Activity (Other),Activity (Other)         
+human processes,Human Processes          
+hydrographic feature,Hydrographic Feature     
+Hydrologic Process,Hydrologic Process       
+instrument package,Instrument Package       
+marine feature,Marine Feature           
+material entity,Material                 
+namedProperty,Property                 
+natural processes,Natural Processes        
+Ocean Process,Ocean Process            
+Organization,Organization             
+Realm (Other),Realm (Other)            
+Resource,Resource Type            
+Resource type,Resource Type            
+rock,Rock                     
+Rock material,Rock Material            
+SATELLITES,Satellites               
+sediment,Sediment                 
+service resource,Service Resource         
+software,Software                 
+software resource,Software Resource        
+specification,Specification            
+surficial process,Surficial Process        
+technique,Method                   
+Tectonic Process,Tectonic Process         
+web service,Web Service              
