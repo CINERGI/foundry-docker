@@ -4,7 +4,7 @@ mkdir -p /data/waf/
 today=$(date +"%b_%d_%Y")
 log_file="/data/logs/ch_nohup_${today}.log"
 echo $log_file
-sleep 10
+sleep 5
 
 # example with limited metadata loading
 
@@ -16,5 +16,5 @@ sleep 10
 #nohup java -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator -c cinergi-consumers-cfg-pipe-stage.xml -f &> $log_file &
 
 #java -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator -c cinergi-consumers-cfg-pipe-stage.xml $*
-java -Xmx768m -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator  $*
+java -Xmx1024m -cp foundry-consumers-1.0-SNAPSHOT-prod.jar org.neuinfo.foundry.consumers.coordinator.ConsumerCoordinator  $*
 

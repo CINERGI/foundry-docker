@@ -6,7 +6,7 @@ today=$(date +"%b_%d_%Y")
 mkdir -p /data/logs/
 log_file="/data/logs/dispatcher_nohup_${today}.log"
 echo $log_file
-sleep 10
+sleep 5
 
 #nohup mvn -q -f ../dispatcher/pom.xml exec:java -Dexec.mainClass="org.neuinfo.foundry.jms.producer.PipelineMessageDispatcher"  &> $log_file
 

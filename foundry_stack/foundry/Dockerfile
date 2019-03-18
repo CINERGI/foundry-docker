@@ -1,14 +1,17 @@
+# If I put these up here, it builds the images thrice
+# once for each final image
+#ARG PROFILE=dev
+#ARG singleAssemblyId=prod
+#ARG BUILDHOME=/var/foundry
+#ARG FOUNDRYBASEDIR=/foundry
+
+FROM maven:3-jdk-8 as foundrybuild
+# ARGs only last for the build phase of a single image. For the multistage, renew the ARG
 ARG PROFILE=dev
 ARG singleAssemblyId=prod
 ARG BUILDHOME=/var/foundry
 ARG FOUNDRYBASEDIR=/foundry
 
-FROM maven:3-jdk-8 as foundrybuild
-# ARGs only last for the build phase of a single image. For the multistage, renew the ARG
-ARG PROFILE
-ARG singleAssemblyId
-ARG BUILDHOME
-ARG FOUNDRYBASEDIR
 
 LABEL description="CINERGI ISO19115 Metadata enhancement pipeline"
 LABEL maintainer="David Valentine dwvalentine@usdc.edu"
@@ -123,14 +126,26 @@ RUN mvn -P${PROFILE}   compile assembly:single -DskipTests \
 ####################################################
 FROM openjdk:8-jdk AS foundrybase
 # ARGs only last for the build phase of a single image. For the multistage, renew the ARG
-ARG PROFILE
-ARG singleAssemblyId
-ARG BUILDHOME
-ARG FOUNDRYBASEDIR
+ARG PROFILE=dev
+ARG singleAssemblyId=prod
+ARG BUILDHOME=/var/foundry
+ARG FOUNDRYBASEDIR=/foundry
+
 LABEL description="CINERGI ISO19115 Metadata enhancement pipeline"
 LABEL maintainer="David Valentine dwvalentine@usdc.edu"
 
-VOLUME ["/data"]
+# see Note 1
+RUN mkdir -p $FOUNDRY_HOME \
+      /data/logs \
+      /data/foundry \
+      /data/config/ \
+      /data/foundry/foundry_plugins/plugins \
+      /data/foundry/foundry_plugins/lib \
+      /data/cinergi \
+      /data/waf
+
+# see Note 1
+VOLUME [ "/data/waf","/data/foundry/", "/data/logs/"]
 
 # Install wget and install/updates certificates
 RUN apt-get update \
@@ -146,23 +161,26 @@ RUN apt-get update \
 # in the interest of time, we mirror that code ran from /home/foundry
 ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
 RUN  chmod 777 /data
-RUN mkdir -p $FOUNDRY_HOME /data/logs /data/foundry /data/config/ /data/foundry/foundry_plugins/plugins
+
 WORKDIR $FOUNDRY_HOME/
 COPY --from=foundrybuild $BUILDHOME/Foundry/bin/ bin/
 #RUN pwd;ls -al;ls -al bin
-COPY config/ /data/config/
+#COPY config/ /data/config/
 COPY stopwords/ /data/cinergi/
 WORKDIR $FOUNDRY_HOME/bin/
+RUN mkdir -p /data/waf/WEB-INF
+COPY tomcat/metadata_web.xml /data/waf/WEB-INF/web.xml
 
 #########
 # DISPATCHER, MANAGER
 #############
 FROM foundrybase AS dispatcher
 # ARGs only last for the build phase of a single image. For the multistage, renew the ARG
-ARG PROFILE
-ARG singleAssemblyId
-ARG BUILDHOME
-ARG FOUNDRYBASEDIR
+ARG PROFILE=dev
+ARG singleAssemblyId=prod
+ARG BUILDHOME=/var/foundry
+ARG FOUNDRYBASEDIR=/foundry
+
 ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
 #ENV singleAssemblyId prod
 WORKDIR $FOUNDRY_HOME/bin
@@ -179,10 +197,11 @@ ENTRYPOINT   ["/bin/bash"]
 #################
 FROM foundrybase AS consumer
 # ARGs only last for the build phase of a single image. For the multistage, renew the ARG
-ARG PROFILE
-ARG singleAssemblyId
-ARG BUILDHOME
-ARG FOUNDRYBASEDIR
+ARG PROFILE=dev
+ARG singleAssemblyId=prod
+ARG BUILDHOME=/var/foundry
+ARG FOUNDRYBASEDIR=/foundry
+
 ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
 ENV singleAssemblyId prod
 WORKDIR $FOUNDRY_HOME/bin
@@ -198,10 +217,11 @@ ENTRYPOINT   ["./docker_consumer_head.sh"]
 #################
 FROM foundrybase AS ingestor
 # ARGs only last for the build phase of a single image. For the multistage, renew the ARG
-ARG PROFILE
-ARG singleAssemblyId
-ARG BUILDHOME
-ARG FOUNDRYBASEDIR
+ARG PROFILE=dev
+ARG singleAssemblyId=prod
+ARG BUILDHOME=/var/foundry
+ARG FOUNDRYBASEDIR=/foundry
+
 COPY --from=foundrybuild $BUILDHOME/Foundry/consumers/etc/ .
 ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
 ENV singleAssemblyId prod
@@ -214,44 +234,16 @@ WORKDIR $FOUNDRY_HOME/bin/
 EXPOSE 9000
 ENTRYPOINT   ["/bin/bash"]
 
-
-#  && cp common/target/foundry-common-1.0-SNAPSHOT-${singleAssemblyId}.jar bin/
-# pwd;ls -al
-#EXPOSE 9000
-#ENTRYPOINT   ["/bin/bash"]
-
-###################
-#try three machines
-###################
-#FROM foundry AS consumer
-#
-#WORKDIR $HOME/Foundry/bin/
-#EXPOSE 9000
-#ENTRYPOINT   ["./docker_consumer_head.sh"]
-#
-###############################
-#FROM foundry AS dispacther
-#
-#WORKDIR $HOME/Foundry/bin/
-#EXPOSE 9000
-#ENTRYPOINT   ["./docker_dispatcher.sh"]
-#
-###############################
-#FROM foundry AS manager
-#
-#WORKDIR $HOME/Foundry/bin/
-#EXPOSE 22
-#ENTRYPOINT   ["./docker_manager.sh"]
-
 #######################
 # tomcat for the UL
 #######################
 FROM tomcat:9-jre8 AS foundryweb
 # ARGs only last for the build phase of a single image. For the multistage, renew the ARG
-ARG PROFILE
-ARG singleAssemblyId
-ARG BUILDHOME
-ARG FOUNDRYBASEDIR
+ARG PROFILE=dev
+ARG singleAssemblyId=prod
+ARG BUILDHOME=/var/foundry
+ARG FOUNDRYBASEDIR=/foundry
+
 
 RUN apt-get update \
  && apt-get install -y -q --no-install-recommends \
@@ -268,7 +260,17 @@ WORKDIR $CATALINA_HOME/webapps/
 
 COPY --from=foundrybuild  $BUILDHOME/Foundry/ingestor-web/target/foundry.war $CATALINA_HOME/webapps/foundry.war
 # something to cause an image
-VOLUME ["/data", "/opt/tomcat/webapps/metadata"]
-COPY tomcat-users.xml $CATALINA_HOME/conf
+VOLUME ["/data/waf", "/usr/local/tomcat/logs/"]
+COPY tomcat/tomcat-users.xml $CATALINA_HOME/conf
+COPY tomcat/metadata-context.xml $CATALINA_HOME/conf/Catalina/localhost/metadata.xml
 
 EXPOSE 8080
+
+#####
+# Notes
+# 1) if you add a directory to be preservered here, or add
+#     or create a directory in volume, you will need to rebuild that volume
+#     or add it to the running preserved
+#
+#     /data/cinergi and /data/config are copied into during the build process
+#     so they should not be preserved between builds, or any updates will not get seen

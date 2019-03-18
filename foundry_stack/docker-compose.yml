@@ -23,7 +23,7 @@ services:
  # https://hub.docker.com/r/woahbase/alpine-activemq/
 # https://dzone.com/articles/building-active-mq-docker-image-on-k8s
   servicebus:
-    image:  woahbase/alpine-activemq
+    image:  webcenter/activemq
     container_name: foundry-servicebus
     hostname: servicebus
     networks:
@@ -51,8 +51,9 @@ services:
       - es_cluster=es-geoportal
       - es_node=elasticsearch
     volumes:
-      - foundryData:/data
-      - foundryData:/opt/tomcat/webapps/metadata
+      - foundryData:/data/logs
+      - foundryWaf:/data/waf
+      - foundryPlugins:/data/foundry
 #    links:
 #      - consumer:consumer
     networks:
@@ -73,7 +74,9 @@ services:
           soft: -1
           hard: -1
     volumes:
-      - foundryData:/data
+      - foundryData:/data/logs
+      - foundryWaf:/data/waf
+      - foundryPlugins:/data/foundry
     environment:
       - es_node=elasticsearch
     networks:
@@ -87,29 +90,30 @@ services:
 #          cpus: '0.25'
 #          memory: 512M
 
-  manager:
-    build:
-      context: foundry
-      target: dispatcher
-    container_name: foundry-manager
-    hostname: manager
-    entrypoint: /bin/bash docker_manager.sh
-#    entrypoint: /bin/bash
-    stdin_open: true
-    tty: true
-    depends_on:
-      - mongodb
-      - servicebus
-    environment:
-      - es_node=elasticsearch
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    volumes:
-      - foundryData:/data
-    networks:
-      - default
+# Run script on dispatcher
+#  manager:
+#    build:
+#      context: foundry
+#      target: dispatcher
+#    container_name: foundry-manager
+#    hostname: manager
+#    entrypoint: /bin/bash docker_manager.sh
+##    entrypoint: /bin/bash
+#    stdin_open: true
+#    tty: true
+#    depends_on:
+#      - mongodb
+#      - servicebus
+#    environment:
+#      - es_node=elasticsearch
+#    ulimits:
+#      memlock:
+#        soft: -1
+#        hard: -1
+#    volumes:
+#      - foundryData:/data
+#    networks:
+#      - default
 
   ingestor:
     build:
@@ -131,7 +135,10 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - foundryData:/data
+      - foundryData:/data/logs
+      - foundryWaf:/data/waf
+      - foundryPlugins:/data/foundry
+
     networks:
       - default
 
@@ -155,8 +162,10 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - foundryData:/data
-      - foundryData:/opt/tomcat/webapps/metadata
+      - foundryData:/data/logs
+      - foundryWaf:/data/waf:ro
+      - foundryPlugins:/data/foundry:ro
+      - tomcatLogs:/usr/local/tomcat/logs
     networks:
       - default
 
@@ -180,6 +189,12 @@ services:
 
 volumes:
   foundryData:
+    driver: local
+  foundryWaf:
+      driver: local
+  foundryPlugins:
+        driver: local
+  tomcatLogs:
     driver: local
   mongodb1:
     driver: local
