@@ -1,9 +1,13 @@
 # Dockerized DDStudio CINERGI Foundry pipeline
 
 This project bundles all prerequisites needed to run the 
-geoportal server and a harvester are captured
- in this docker composition. 
- The docker-compose.yml creates two containers, 
+foundry pipeline, management interface and web services interface.
+ are captured in this docker composition. 
+ The docker-compose.yml creates severa containers, 
+  * Service dependencies
+   ** Mongodb
+   ** ServiceBus
+   ** *GEOPORTAL
  one running Tomcat with the [geoportal-server-catalog]
  (https://github.com/Esri/geoportal-server-catalog) 
  and the [geoportal-harvester](https://github.com/Esri/geoportal-harvester). 
@@ -15,26 +19,46 @@ geoportal server and a harvester are captured
 - Version XX of the CINERGI Foundry.
 
 ## Installation
+
+``` 
+build and start the geoportal docker instance
+https://github.com/Esri/geoportal-server-catalog-docker
+```
+Foundry pushes to the geoportal, so it needs to be running to prevent erros
+
  
 Clone the repository to your local drive. In order to build the containers and run them, use the following commands:
 ```bash
 $ git clone https://github.com/cinergi/foundry-docker.git
 $ cd foundry-docker/foundry_stack
+$ docker network create datastudio
 $ docker-compose build
 $ docker-compose up
 ```
 
-S
-## Run the applications
 
-* Connect to http://localhost:8080/geoportal to see the geoportal in action. 
-* Connect to http://localhost:8080/harvester to see the harvester in action. 
+## Run the applications
+Foundry pushes to the geoportal, so it needs to be running to prevent erros
+* Connect to http://localhost:8082/geoportal
+  * there will be *An error occurred*, until data is added
+* Connect to http://localhost:8083/foundry to see the foundry web interface
+
+* Connect to dispatcher, and start management console
+```
+docker-compose exec dispatcher /bin/bash
+root@ec-dispatcher:/foundry/bin# ./docker-manager.sh
+Foundry>> list
+Foundry>> ingest cinergi-9999
+Foundry>> ingest cinergi-9998
+```
+* now go back and refresh the geoportal
 
 ## Requirements
 
 * Docker
 
 ## Kubernetes 
+TBD
 for production:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
 $ grep vm.max_map_count /etc/sysctl.conf
@@ -74,3 +98,22 @@ docker rmi dispatcher
 docker-compose build dispatcher
 
 rebuild config
+
+## managing mongo rebuild
+DO NOT DO THIS ON A PRODUCTION SERVICE
+
+```
+# check if container running
+docker container ls -a
+#if so, stop
+docker-compose stop mongodb
+# then remove it and volumes. images still there
+docker-compose rm -v mongodb
+# remove the volume
+docker volume rm foundry_stack_mongodb1
+docker image prune
+# clean up
+docker volume prune
+# rebuild
+docker-compose up mongodb
+  ```

@@ -41,10 +41,11 @@ consumers:
     class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.WAFExporter"
     status: exported_waf
     outDirectory: "/data/waf"
+    # 8080 internal docker port, not the external 8082
 - geoportal:
     class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.Geoportal2Exporter"
     status: finished
-    gptURI: "http://geoportal:8082/geoportal/"
+    gptURI: "http://geoportal:8080/geoportal/"
     elasticsearchIndex: metadata
     user: "admin"
     password: "pass"

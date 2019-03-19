@@ -16,9 +16,10 @@ services:
       MONGO_INITDB_DATABASE: cinergi
     volumes:
       - mongodb1:/data/db
-      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./foundry/mongodb/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./foundry/mongodb/mongo-seed.js:/docker-entrypoint-initdb.d/mongo-seed.js:ro
     networks:
-      - default
+      - datastudio
 #https://hub.docker.com/r/webcenter/activemq/
  # https://hub.docker.com/r/woahbase/alpine-activemq/
 # https://dzone.com/articles/building-active-mq-docker-image-on-k8s
@@ -27,7 +28,7 @@ services:
     container_name: foundry-servicebus
     hostname: servicebus
     networks:
-      - default
+      - datastudio
     ports:
       - 8161:8161
 #      - 61613:61613
@@ -57,7 +58,7 @@ services:
 #    links:
 #      - consumer:consumer
     networks:
-      - default
+      - datastudio
 
 
   consumer:
@@ -80,7 +81,7 @@ services:
     environment:
       - es_node=elasticsearch
     networks:
-      - default
+      - datastudio
 #    deploy:
 #      resources:
 #        limits:
@@ -113,7 +114,7 @@ services:
 #    volumes:
 #      - foundryData:/data
 #    networks:
-#      - default
+#      - datastudio
 
   ingestor:
     build:
@@ -140,7 +141,7 @@ services:
       - foundryPlugins:/data/foundry
 
     networks:
-      - default
+      - datastudio
 
 
   foundryweb:
@@ -167,7 +168,7 @@ services:
       - foundryPlugins:/data/foundry:ro
       - tomcatLogs:/usr/local/tomcat/logs
     networks:
-      - default
+      - datastudio
 
 #    deploy:
 #      resources:
@@ -182,10 +183,10 @@ services:
 # requires creation of an  geoportal network.
 # docker network geoportal create
 ###########
-#networks:
-#  default:
-#    external:
-#      name: geoportal
+networks:
+  datastudio:
+    external:
+      name: datastudio
 
 volumes:
   foundryData:
