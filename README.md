@@ -52,6 +52,22 @@ r_manager.sh
 Ingest:
 Present, we will copy ingest configes into a container, the 
 exec and ingest command.
+docker-compose  exec --workdir /foundry/bin ingestor /bin/bash
+root@ingestor:/foundry/bin# ./docker_ingest_src_cli.sh  -c ingestor-cfg.xml -j ./cinergi-0000.json
+
+# copyy in a collection config to the container
+docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
+docker container ls
+CONTAINER ID        IMAGE                    COMMAND                  CREATED              STATUS              PORTS                                                                                   NAMES
+111644c17793        foundry_stack_ingestor   "/bin/bash"              About a minute ago   Up About a minute   9000/tcp                                                                                foundry-ingestor
+b2494a47b987        mongo:3                  "docker-entrypoint.s…"   6 hours ago          Up About a minute   0.0.0.0:27017-27018->27017-27018/tcp                                                    foundry-mongo
+ea4030bd5ea0        webcenter/activemq       "/app/run.sh"            7 hours ago          Up About a minute   1883/tcp, 5672/tcp, 0.0.0.0:8161->8161/tcp, 61613-61614/tcp, 0.0.0.0:61616->61616/tcp   foundry-servicebus
+
+docker cp foundry/collections/cinergi-9999.json 111644c17793:/foundry/collections/ 
+./docker_ingest_src_cli.sh  -c ingestor-cfg.xml -j ../collections/cinergi-9999.json
+
+docker-compose exec dispatcher /bin/bash
+ 
 
 Want to build a container to run a new shell command
 docker rmi dispatcher

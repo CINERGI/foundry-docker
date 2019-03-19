@@ -44,8 +44,9 @@ RUN mkdir -p ${BUILDHOME}
 ##########
 # Install geoportal web application
 # dependencies
+# jar is included in foundry/lib
 ########
-ENV GITURL=https://github.com/Esri/geoportal-server-harvester.git
+#ENV GITURL=https://github.com/Esri/geoportal-server-harvester.git
 WORKDIR ${BUILDHOME}/
 # had issues with cloning into $HOME
 # needed to set $HOME
@@ -222,13 +223,15 @@ ARG singleAssemblyId=prod
 ARG BUILDHOME=/var/foundry
 ARG FOUNDRYBASEDIR=/foundry
 
-COPY --from=foundrybuild $BUILDHOME/Foundry/consumers/etc/ .
+# COPY --from=foundrybuild $BUILDHOME/Foundry/consumers/etc/ $FOUNDRYBASEDIR/collections/
+COPY collections/ $FOUNDRYBASEDIR/collections/
 ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
 ENV singleAssemblyId prod
 WORKDIR $FOUNDRY_HOME/bin
 COPY bin/docker_ingest_src_cli.sh docker_ingest_src_cli.sh
 COPY --from=foundrybuild $BUILDHOME/Foundry/ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar .
 RUN chmod a+x *.sh
+
 
 WORKDIR $FOUNDRY_HOME/bin/
 EXPOSE 9000

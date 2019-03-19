@@ -1,0 +1,31 @@
+{
+    "sourceInformation": {
+      "resourceID": "cinergi-0000",
+      "name": "Cinergi Form",
+      "dataSource": "Cinergi Form"
+    },
+    
+    "ingestConfiguration": {
+      "ingestMethod": "form",
+      
+      "crawlFrequency": {
+        "crawlType": "Frequency",
+        "hours": "48",
+        "minutes": "0",
+        "startDays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "startTime": "0:00",
+        "operationEndTime": "24:00"
+      }  
+    },
+        
+    "contentSpecification": {
+    },
+    
+    "originalRecordIdentifierSpec": {
+      "fields": ["$.'gmd:MD_Metadata'.'gmd:fileIdentifier'.'gco:CharacterString'.'_$'"],
+      "delimiter": [":"],
+      "method": "Value"
+    },
+      
+    "documentProcessing": ["UUID Generation", "XML2Cinergi", "Index"]
+}

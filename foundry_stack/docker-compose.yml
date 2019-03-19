@@ -151,7 +151,7 @@ services:
     hostname: foundry
     ports:
       # keep it off 8080 on local dev
-      - "8082:8080"
+      - "8083:8080"
     depends_on:
       - mongodb
       - servicebus

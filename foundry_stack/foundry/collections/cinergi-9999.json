@@ -1,0 +1,35 @@
+{
+    "sourceInformation": {
+      "resourceID": "cinergi-9999",
+      "name": "Demonstration gmd__MD_Metadata",
+      "dataSource": "Demonstration_gmd"
+    },
+    
+    "ingestConfiguration": {
+      "ingestMethod": "WAF",
+      "ingestURL": "http://hydro10.sdsc.edu/metadata/example/gmd",
+      "allowDuplicates": "False",
+      
+      "crawlFrequency": {
+        "crawlType": "Frequency",
+        "hours": "48",
+        "minutes": "0",
+        "startDays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "startTime": "0:00",
+        "operationEndTime": "24:00"
+      }  
+    },
+        
+    "contentSpecification": {
+      "keepMissing": "false",
+      "locale": "en_US"
+    },
+    
+    "originalRecordIdentifierSpec": {
+      "fields": ["$.'gmd:MD_Metadata'.'gmd:fileIdentifier'.'gco:CharacterString'.'_$'"],
+      "delimiter": [":"],
+      "method": "Value"
+    },
+      
+    "documentProcessing": ["UUID Generation", "XML2Cinergi", "Index"]
+}

@@ -1,7 +1,7 @@
 let error = false
 
 let res = [
-    db.cinergi,
+//    db.cinergi,
     db = db.getSiblingDB('cinergi'),
     db.test.insertOne({test:'test'}),
     db.createUser({
@@ -13,6 +13,11 @@ let res = [
                 role: 'dbAdmin',
                 db: 'cinergi',
             },
+            {
+                role: 'readWrite',
+                db: 'cinergi',
+            }
+
         ],
     }),
     db.createUser({
@@ -21,7 +26,7 @@ let res = [
         roles: [
 
             {
-                role: 'admin',
+                role: 'dbOwner',
                 db: 'cinergi',
             },
         ],

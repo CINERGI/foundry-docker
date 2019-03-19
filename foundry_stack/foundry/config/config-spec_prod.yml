@@ -41,7 +41,7 @@ consumers:
     - geoportal:
          class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.Geoportal2Exporter"
          status: finished
-         gptURI: "http://132.249.238.169:8080/geoportal/"
+         gptURI: "http://geoportal:8082/geoportal/"
          elasticsearchIndex: metadata
          user: "admin"
          password: "pass"
