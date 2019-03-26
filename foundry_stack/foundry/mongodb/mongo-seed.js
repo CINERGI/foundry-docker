@@ -1,3 +1,7 @@
+
+/*
+CLEAR ANY  "batchInfos" : [] before addding a record.
+ */
 let error = false
 
 let res = [
@@ -150,28 +154,7 @@ let res = [
                 "XML2Cinergi",
                 "Index"
             ],
-            "batchInfos" : [
-                {
-                    "batchId" : "03182019-23:48",
-                    "status" : 2,
-                    "ingestedCount" : 2,
-                    "submittedCount" : 2,
-                    "updatedCount" : 0,
-                    "ingestionStatus" : 2,
-                    "ingestionStartDatetime" : "2019-03-18T23:48:42Z",
-                    "ingestionEndDatetime" : ISODate("2019-03-18T23:48:43.793Z")
-                },
-                {
-                    "batchId" : "03192019-00:25",
-                    "status" : 2,
-                    "ingestedCount" : 2,
-                    "submittedCount" : 2,
-                    "updatedCount" : 0,
-                    "ingestionStatus" : 2,
-                    "ingestionStartDatetime" : "2019-03-19T00:25:32Z",
-                    "ingestionEndDatetime" : ISODate("2019-03-19T00:25:32.745Z")
-                }
-            ]
+            "batchInfos" : []
         }
 
         ]),

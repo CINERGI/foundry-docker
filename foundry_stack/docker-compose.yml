@@ -1,5 +1,12 @@
 version: '3.6'
-
+# NOTE: YOU NEED TO copy settings.env.example to settings.env
+# todo:
+# - refactor with overrides
+# -- prodction override with additional instances of dispatcher/consumer/ingestor
+# - arg for settings file
+# - secrets
+# - nginx and SSL for production deployment
+# - merged gpt and foundry for production
 services:
  #https://github.com/docker-library/repo-info/blob/master/repos/mongo/remote/3-stretch.md
   mongodb:
@@ -10,10 +17,8 @@ services:
       - 27017:27017
       - 27018:27018
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-      MONGO_INITDB_DATABASE: cinergi
+    env_file:
+     - foundry/config/setttings.env
     volumes:
       - mongodb1:/data/db
       - ./foundry/mongodb/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
@@ -48,9 +53,8 @@ services:
       - servicebus
     ports:
       - "9000:9000"
-    environment:
-      - es_cluster=es-geoportal
-      - es_node=elasticsearch
+    env_file:
+      - foundry/config/setttings.env
     volumes:
       - foundryData:/data/logs
       - foundryWaf:/data/waf
@@ -78,8 +82,8 @@ services:
       - foundryData:/data/logs
       - foundryWaf:/data/waf
       - foundryPlugins:/data/foundry
-    environment:
-      - es_node=elasticsearch
+    env_file:
+      - foundry/config/setttings.env
     networks:
       - datastudio
 #    deploy:
@@ -129,8 +133,8 @@ services:
     depends_on:
       - mongodb
       - servicebus
-    environment:
-      - es_node=elasticsearch
+    env_file:
+      - foundry/config/setttings.env
     ulimits:
       memlock:
         soft: -1
@@ -156,8 +160,8 @@ services:
     depends_on:
       - mongodb
       - servicebus
-    environment:
-      - es_node=elasticsearch
+    env_file:
+      - foundry/config/setttings.env
     ulimits:
       memlock:
         soft: -1

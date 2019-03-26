@@ -1,3 +1,4 @@
 .DS_Store
-/src/local/harvester/harvester.mv.db
 .idea
+/foundry_stack/foundry/config/setttings.env
+/foundry_stack/local/

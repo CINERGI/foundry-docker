@@ -1,0 +1,51 @@
+pluginDir: ${f_pluginDir:/data/foundry/consumer_plugins/plugins}
+database:
+    host: ${f_mongodb_host:localhost}
+    port: 27017
+    db: ${f_mongo_db:cinergi}
+    collection: ${f_mongodb_collection:records}
+    user: ${f_mongobd_user:pipeline}
+    pwd: ${f_mongodb_pwd:example}
+mq:
+    brokerURL: ${f_brokerURL:tcp://servicebus:61616?wireFormat.maxInactivityDuration=0}
+
+workflow:
+    "Cinergi Workflow":
+        - uuidGen
+        - spatial
+        - keyword
+        - export
+        - geoportal
+
+consumers:
+    - uuidGen:
+         class: org.neuinfo.foundry.consumers.jms.consumers.plugins.DocIDAssigner
+         status: id_assigned
+    - spatial:
+         class: org.neuinfo.foundry.consumers.jms.consumers.plugins.SpatialEnhancer2
+         status: spatially_enhanced
+    - keyword:
+         class: org.neuinfo.foundry.consumers.jms.consumers.plugins.KeywordEnhancer2
+         status: keyword_enhanced
+         serviceURL: ${f_scigraph_serviceURL:http://ec-scigraph.sdsc.edu:9000}
+         stopwordsUrl: ${f_scigraph_stopwordsUrl:file:///data/cinergi/stopwords.txt}
+         useNER: false
+    - org:
+         class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.OrganizationEnhancer2"
+         status: org_enhanced
+    - export:
+         class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.WAFExporter"
+         status: finished  
+         outDirectory: ${f_waf_outDirectory:/tmp/waf}
+    - geoportal:
+         class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.Geoportal2Exporter"
+         status: finished
+         gptURI: ${f_gpt_gptURI:http://geoportal:8080/geoportal/}
+         elasticsearchIndex: ${f_gpt_elasticsearchIndex:metadata}
+         user:  ${f_gpt_user:admin}
+         password: ${f_gpt_password:pass}
+
+
+
+
+

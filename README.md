@@ -117,3 +117,7 @@ docker volume prune
 # rebuild
 docker-compose up mongodb
   ```
+  
+Checking the configuration: 
+
+jar xf foundry-ingestor-1.0-SNAPSHOT-prod.jar ingestor-cfg.xml
