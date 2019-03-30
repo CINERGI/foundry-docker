@@ -11,7 +11,7 @@ ARG PROFILE=dev
 ARG singleAssemblyId=prod
 ARG BUILDHOME=/var/foundry
 ARG FOUNDRYBASEDIR=/foundry
-
+ARG FOUNDRYCONFIG=config-spec_docker.yml
 
 LABEL description="CINERGI ISO19115 Metadata enhancement pipeline"
 LABEL maintainer="David Valentine dwvalentine@usdc.edu"
@@ -102,7 +102,7 @@ RUN echo ${PROFILE}
 WORKDIR $FOUNDRY_HOME/bin/
 RUN chmod a+x config_gen.sh consumer_head.sh dispatcher.sh manager.sh config_gen.sh docker_consumer_head.sh docker_dispatcher.sh docker_manager.sh
 #COPY config/config-spec.yml .
-COPY config/config-spec_prod.yml config-spec.yml
+COPY config/$FOUNDRYCONFIG config-spec.yml
 
 RUN  [ "./config_gen.sh", "-c config-spec.yml", "-p ${PROFILE}" ]
 #RUN mvn -X -q -f ../common/pom.xml exec:java -Dexec.mainClass="org.neuinfo.foundry.common.config.ConfigGenerator" -Dexec.args="$*"
@@ -186,8 +186,10 @@ ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
 #ENV singleAssemblyId prod
 WORKDIR $FOUNDRY_HOME/bin
 COPY --from=foundrybuild $BUILDHOME/Foundry/dispatcher/target/foundry-dispatcher-1.0-SNAPSHOT-${singleAssemblyId}.jar .
-COPY bin/docker_dispatcher.sh docker_dispatcher.sh
-COPY bin/docker_manager.sh docker_manager.sh
+COPY bin/docker_dispatcher.sh dispatcher.sh
+COPY bin/docker_manager.sh manager.sh
+COPY bin/docker_ingest_src_cli.sh ingest_src_cli.sh
+COPY --from=foundrybuild $BUILDHOME/Foundry/ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar .
 RUN chmod a+x *.sh
 WORKDIR $FOUNDRY_HOME/bin/
 EXPOSE 9000
@@ -207,7 +209,7 @@ ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
 ENV singleAssemblyId prod
 WORKDIR $FOUNDRY_HOME/bin
 COPY --from=foundrybuild $BUILDHOME/Foundry/consumers/target/foundry-consumers-1.0-SNAPSHOT-${singleAssemblyId}.jar .
-COPY bin/docker_consumer_head.sh docker_consumer_head.sh
+COPY bin/docker_consumer_head.sh consumer_head.sh
 RUN  chmod a+x *.sh
 WORKDIR $FOUNDRY_HOME/bin/
 EXPOSE 9000
@@ -215,22 +217,23 @@ ENTRYPOINT   ["./docker_consumer_head.sh"]
 
 #################
 # INGESTOR
+# moved to dispacher/manager
 #################
-FROM foundrybase AS ingestor
-# ARGs only last for the build phase of a single image. For the multistage, renew the ARG
-ARG PROFILE=dev
-ARG singleAssemblyId=prod
-ARG BUILDHOME=/var/foundry
-ARG FOUNDRYBASEDIR=/foundry
-
-# COPY --from=foundrybuild $BUILDHOME/Foundry/consumers/etc/ $FOUNDRYBASEDIR/collections/
-COPY collections/ $FOUNDRYBASEDIR/collections/
-ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
-ENV singleAssemblyId prod
-WORKDIR $FOUNDRY_HOME/bin
-COPY bin/docker_ingest_src_cli.sh docker_ingest_src_cli.sh
-COPY --from=foundrybuild $BUILDHOME/Foundry/ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar .
-RUN chmod a+x *.sh
+#FROM foundrybase AS ingestor
+## ARGs only last for the build phase of a single image. For the multistage, renew the ARG
+#ARG PROFILE=dev
+#ARG singleAssemblyId=prod
+#ARG BUILDHOME=/var/foundry
+#ARG FOUNDRYBASEDIR=/foundry
+#
+## COPY --from=foundrybuild $BUILDHOME/Foundry/consumers/etc/ $FOUNDRYBASEDIR/collections/
+#COPY collections/ $FOUNDRYBASEDIR/collections/
+#ENV FOUNDRY_HOME=$FOUNDRYBASEDIR
+#ENV singleAssemblyId prod
+#WORKDIR $FOUNDRY_HOME/bin
+#COPY bin/docker_ingest_src_cli.sh docker_ingest_src_cli.sh
+#COPY --from=foundrybuild $BUILDHOME/Foundry/ingestor/target/foundry-ingestor-1.0-SNAPSHOT-${singleAssemblyId}.jar .
+#RUN chmod a+x *.sh
 
 
 WORKDIR $FOUNDRY_HOME/bin/

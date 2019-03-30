@@ -1,3 +1,10 @@
+########
+### This is a thought experiemnt where we might run two message queues
+### and one set of consumer/dispatcher/servicebus
+##   Instead we run two stacks,
+###    one for cinegi form
+###    one for normal pipeline
+#######
 pluginDir: "/data/foundry/foundry_plugins/plugins"
 database:
     host: mongodb

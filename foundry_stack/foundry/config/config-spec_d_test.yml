@@ -1,3 +1,7 @@
+###########
+### Short. Just read in, writes out
+### for testing installation
+############
 pluginDir: ${f_pluginDir:/data/foundry/consumer_plugins/plugins}
 database:
     host: ${f_mongodb_host:localhost}
@@ -12,26 +16,12 @@ mq:
 workflow:
     "Cinergi Workflow":
         - uuidGen
-        - spatial
-        - keyword
         - export
 
 consumers:
     - uuidGen:
          class: org.neuinfo.foundry.consumers.jms.consumers.plugins.DocIDAssigner
          status: id_assigned
-    - spatial:
-         class: org.neuinfo.foundry.consumers.jms.consumers.plugins.SpatialEnhancer2
-         status: spatially_enhanced
-    - keyword:
-         class: org.neuinfo.foundry.consumers.jms.consumers.plugins.KeywordEnhancer2
-         status: keyword_enhanced
-         serviceURL: ${f_scigraph_serviceURL:http://ec-scigraph.sdsc.edu:9000}
-         stopwordsUrl: ${f_scigraph_stopwordsUrl:file:///data/cinergi/stopwords.txt}
-         useNER: false
-    - org:
-         class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.OrganizationEnhancer2"
-         status: org_enhanced
     - export:
          class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.WAFExporter"
          status: finished  

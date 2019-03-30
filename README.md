@@ -70,14 +70,13 @@ we end up having to rebuild when we want to modify them
 
 
 Manager:
-docker-compose  exec --workdir /foundry/bin dispatcher /bin/bash docke
-r_manager.sh
+docker-compose  exec --workdir /foundry/bin dispatcher /bin/bash manager.sh
 
 Ingest:
 Present, we will copy ingest configes into a container, the 
 exec and ingest command.
-docker-compose  exec --workdir /foundry/bin ingestor /bin/bash
-root@ingestor:/foundry/bin# ./docker_ingest_src_cli.sh  -c ingestor-cfg.xml -j ./cinergi-0000.json
+docker-compose  exec --workdir /foundry/bin dispatcher /bin/bash
+root@ingestor:/foundry/bin# ./ingest_src_cli.sh  -c ingestor-cfg.xml -j ./cinergi-0000.json
 
 # copyy in a collection config to the container
 docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH

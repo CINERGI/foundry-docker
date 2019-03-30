@@ -1,3 +1,7 @@
+######
+## This includes the push to Geoportal
+##  Only run if you have a geoportal running
+########
 pluginDir: ${f_pluginDir:/data/foundry/consumer_plugins/plugins}
 database:
     host: ${f_mongodb_host:localhost}
@@ -15,6 +19,7 @@ workflow:
         - spatial
         - keyword
         - export
+        - geoportal
 
 consumers:
     - uuidGen:
@@ -36,7 +41,13 @@ consumers:
          class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.WAFExporter"
          status: finished  
          outDirectory: ${f_waf_outDirectory:/tmp/waf}
-
+    - geoportal:
+         class: "org.neuinfo.foundry.consumers.jms.consumers.plugins.Geoportal2Exporter"
+         status: finished
+         gptURI: ${f_gpt_gptURI:http://geoportal:8080/geoportal/}
+         elasticsearchIndex: ${f_gpt_elasticsearchIndex:metadata}
+         user:  ${f_gpt_user:admin}
+         password: ${f_gpt_password:pass}
 
 
 

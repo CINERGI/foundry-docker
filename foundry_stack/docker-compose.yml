@@ -120,32 +120,32 @@ services:
 #    networks:
 #      - datastudio
 
-  ingestor:
-    build:
-      context: foundry
-      target: ingestor
-    container_name: foundry-ingestor
-    hostname: ingestor
-    #entrypoint: /bin/bash docker_ingest_src_cli.sh
-    entrypoint: /bin/bash
-    stdin_open: true
-    tty: true
-    depends_on:
-      - mongodb
-      - servicebus
-    env_file:
-      - foundry/config/setttings.env
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    volumes:
-      - foundryData:/data/logs
-      - foundryWaf:/data/waf
-      - foundryPlugins:/data/foundry
-
-    networks:
-      - datastudio
+#  ingestor:
+#    build:
+#      context: foundry
+#      target: ingestor
+#    container_name: foundry-ingestor
+#    hostname: ingestor
+#    #entrypoint: /bin/bash docker_ingest_src_cli.sh
+#    entrypoint: /bin/bash
+#    stdin_open: true
+#    tty: true
+#    depends_on:
+#      - mongodb
+#      - servicebus
+#    env_file:
+#      - foundry/config/setttings.env
+#    ulimits:
+#      memlock:
+#        soft: -1
+#        hard: -1
+#    volumes:
+#      - foundryData:/data/logs
+#      - foundryWaf:/data/waf
+#      - foundryPlugins:/data/foundry
+#
+#    networks:
+#      - datastudio
 
 
   foundryweb:
