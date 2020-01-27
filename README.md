@@ -22,7 +22,7 @@ foundry pipeline, management interface and web services interface.
 
 ``` 
 build and start the geoportal docker instance
-https://github.com/Esri/geoportal-server-catalog-docker
+https://github.com/CINERGI/geoportal-server-catalog/blob/feat/sdsc/jsonld/docker/README.md
 ```
 Foundry pushes to the geoportal, so it needs to be running to prevent erros
 
@@ -70,15 +70,19 @@ we end up having to rebuild when we want to modify them
 
 
 Manager:
+```
 docker-compose  exec --workdir /foundry/bin dispatcher /bin/bash manager.sh
+```
 
 Ingest:
 Present, we will copy ingest configes into a container, the 
 exec and ingest command.
-docker-compose  exec --workdir /foundry/bin dispatcher /bin/bash
+```docker-compose  exec --workdir /foundry/bin dispatcher /bin/bash
 root@ingestor:/foundry/bin# ./ingest_src_cli.sh  -c ingestor-cfg.xml -j ./cinergi-0000.json
+```
 
-# copyy in a collection config to the container
+```
+## copy in a collection config to the container
 docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 docker container ls
 CONTAINER ID        IMAGE                    COMMAND                  CREATED              STATUS              PORTS                                                                                   NAMES
@@ -90,7 +94,7 @@ docker cp foundry/collections/cinergi-9999.json 111644c17793:/foundry/collection
 ./docker_ingest_src_cli.sh  -c ingestor-cfg.xml -j ../collections/cinergi-9999.json
 
 docker-compose exec dispatcher /bin/bash
- 
+```
 
 Want to build a container to run a new shell command
 docker rmi dispatcher
@@ -102,18 +106,18 @@ rebuild config
 DO NOT DO THIS ON A PRODUCTION SERVICE
 
 ```
-# check if container running
+## check if container running
 docker container ls -a
-#if so, stop
+##if so, stop
 docker-compose stop mongodb
-# then remove it and volumes. images still there
+## then remove it and volumes. images still there
 docker-compose rm -v mongodb
-# remove the volume
+## remove the volume
 docker volume rm foundry_stack_mongodb1
 docker image prune
-# clean up
+## clean up
 docker volume prune
-# rebuild
+## rebuild
 docker-compose up mongodb
   ```
   

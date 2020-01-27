@@ -1,4 +1,4 @@
 .DS_Store
 .idea
-/foundry_stack/foundry/config/setttings.env
+/foundry_stack/foundry/environment/setttings.env
 /foundry_stack/local/
